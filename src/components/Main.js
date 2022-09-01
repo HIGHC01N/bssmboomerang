@@ -9,11 +9,11 @@ export const Main = () => {
             <Link to="/5c:cf:7f:d1:a1:47:" >
                 <div className = "box1">
                     <img src="/img/Group.png" className="cam"></img>
-                    <p>음식인식</p>
+                    <p>음식 인식</p>
                     </div>
             </Link>
             
-            <Link to="/5c:cf:7f:d1:a1:47:" >
+            <Link to="/Ref" >
                 <div className = "box2">
                     <img src="/img/Vector.png" className="ref"></img>
                     <p>냉장고 현황</p>

@@ -2,7 +2,6 @@ import axios from 'axios';
 import { checkPropTypes } from 'prop-types';
 import {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
-import {Amount} from './Amount';
 import './CheckFood.css';
 
 
@@ -29,7 +28,6 @@ export function CheckFood() {
         <div className='start'>시작하기</div>
             <p className='intro'>위 카메라에 물체를 인식시켜주세요.</p>
             </div>}
-            <Amount data={1} />
     </div>
   );
 }

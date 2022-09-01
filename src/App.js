@@ -6,6 +6,7 @@ import { Link, useParams } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CheckFood } from './components/CheckFood';
 import { Main } from './components/Main';
+import { Ref } from './components/Ref';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
               <BrowserRouter>
                 <Routes>
+                <Route exact path="/Ref" element={<Ref />}  />
                   <Route exact path="/" element={<Main />}  />
                   <Route path="/:macAddress" element={<CheckFood />}></Route>
                 </Routes>
