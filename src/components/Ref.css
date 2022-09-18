@@ -1,0 +1,162 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .반응형 {
+        margin-top: 10%;
+    }
+  }
+
+.제목 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 5vw;
+}
+
+.제품사진 {
+    margin-left: -80%;
+
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 2vw;
+/* identical to box height */
+    color: #000000;
+}
+
+.품명 {
+    margin-top: -3.8%;
+    margin-left: -40%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 2vw;
+/* identical to box height */
+    color: #000000;
+}
+
+.탄소량 {
+    margin-top: -4%;
+    margin-left: 26%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 2vw;
+/* identical to box height */
+    color: #000000;
+}
+
+.탄소컬러 {
+    margin-top: -4%;
+    margin-left: 80%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 2vw;
+/* identical to box height */
+    color: #000000;
+}
+
+.firstline{
+    width: 100%;
+
+    border: 5px solid rgba(204, 204, 204, 0.3);
+}
+
+@media (max-width: 800px) {
+    .firstline {
+        width: 100%;
+        border: 0.3vw solid rgba(204, 204, 204, 0.3);
+}
+    }
+
+.imgbox{
+    margin-left: -80%;
+    margin-top: 0%;
+    margin-bottom: 3%;
+}
+
+.img {
+
+    width: 10vw;
+    height: 10vw;
+}
+
+.foodbox {
+    margin-top: -11%;
+    margin-left: -40%;
+}
+
+.food {
+
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    color: black;
+}
+
+
+.line {
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    width: 100%;
+
+    border: 5px solid rgba(204, 204, 204, 0.3);
+}
+
+@media (max-width: 800px) {
+    .line {
+        width: 100%;
+        border: 0.3vw solid rgba(204, 204, 204, 0.3);
+}
+    }
+
+
+.carbonbox {
+    margin-left: 26%;
+    margin-top: -5.7%;
+}
+
+
+.carbon {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: -0.06em;
+
+    color: #CCCCCC;
+
+}
+
+
+/* .colorbox {
+    margin-left: 87.9%;
+    margin-top: -5.1%;
+    margin-bottom: 3%;
+
+    width: 4vw;
+    height: 4vw;
+
+    background-color: rgba(255, 0, 0, 0.8);
+    border-radius: 10px;
+} */

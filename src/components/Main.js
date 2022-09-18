@@ -19,6 +19,11 @@ export const Main = () => {
                     <p>냉장고 현황</p>
                     </div>
             </Link>
+
+            <Link to="/Weather">
+            <div>hello</div>
+            </Link>
+            
             <footer>
                 <h2 className="footer"> 이용할 서비스를 선택해 주십시요</h2>
             </footer>

@@ -1,3 +1,10 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .arrow {
 
     margin-top: -2%;
@@ -8,11 +15,19 @@
     
 }
 
+@media (max-width: 800px) {
+    .arrow {
+        margin-top: 10%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+  }
+
 .start {
 
     position: absolute;
-    width: 30%;
-    height: 20%;
+    width: 30vw;
+    height: 10vw;
     left: 35%;
 
 
@@ -23,25 +38,65 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 100px;
-    line-height: 170px;
+    font-size: 7vw;
+    line-height: 11vw;
     text-align: center;
     letter-spacing: -0.03em;
 
     color: rgba(49, 165, 30, 0.7);
 }
 
+@media (max-width: 800px) {
+    .start {
+        margin-top: -8%;
+        width: 60vw;
+        height: 20vw;
+        left: 20%;
+        font-size: 15vw;
+        line-height: 22vw;
+    }
+  }
+
 .intro{
     margin-top: 15%;
-    margin-bottom: 2%;
+    margin-bottom: 0%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 48px;
-    line-height: 58px;
+    font-size: 4vw;
+    line-height: 7vw;
     text-align: center;
     letter-spacing: 0.115em;
 
     color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 800px) {
+    .intro {
+        margin-top: 30%;
+        left: 20%;
+        font-size: 5vw;
+    }
+  }
+
+.market {
+    margin-left: 87%;
+    margin-top: -8%;
+
+    width: 10vw;
+    height: 10vw;
+
+    background: #FFFFFF;
+    box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.marketimg{
+
+    margin-top: 15%;
+    margin-bottom: 20%;
+    
+    width: 60%;
+    height: 70%;
 }

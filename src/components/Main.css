@@ -5,13 +5,13 @@
 }
 
 
-div.box1 {
+.box1 {
     margin-top: 1%;
     margin-bottom: 0%;
 
     position: absolute;
-    width: 30%;
-    height: 50%;
+    width: 30vw;
+    height: 28vw;
     left: 18%;
 
     background: #FFFFFF;
@@ -21,8 +21,8 @@ div.box1 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 4vw;
+    line-height: 3vw;
     text-align: center;
     letter-spacing: -0.09em;
 
@@ -30,13 +30,23 @@ div.box1 {
 
 }
 
-div.box2 {
+@media (max-width: 800px) {
+    .box1 {
+        margin-left: 1%;
+        width: 60vw;
+        height: 58vw;
+        font-size: 8vw;
+        line-height: 6vw;
+    }
+  }
+
+.box2 {
     margin-top: 1%;
     margin-bottom: 0%;
 
     position: absolute;
-    width: 30%;
-    height: 50%;
+    width: 30vw;
+    height: 28vw;
     left: 52%;
 
     
@@ -47,8 +57,8 @@ div.box2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 4vw;
+    line-height: 3vw;
     text-align: center;
     letter-spacing: -0.09em;
 
@@ -56,33 +66,54 @@ div.box2 {
 
 }
 
+@media (max-width: 800px) {
+    .box2 {
+        margin-top: 65%;
+        margin-left: -33%;
+        width: 60vw;
+        height: 58vw;
+        font-size: 8vw;
+        line-height: 6vw;
+    }
+  }
 
 
-h1.boom {
+
+.boom {
     margin-top: 2%;
     margin-bottom: -6%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 120px;
-    line-height: 145px;
+    font-size: 10vw;
+    line-height: 10vw;
     text-align: center;
     letter-spacing: -0.06em;
     
     color: rgba(49, 165, 30, 0.7);
 }
 
-h2.use{
+
+@media (max-width: 800px) {
+    .boom {
+        margin-top: 20%;
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+  }
+
+
+.use{
 
     margin-top: 5%;
-    margin-bottom: 0%;
+    margin-bottom: -2%;
 
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 100px;
-    line-height: 121px;
+    font-size: 7vw;
+    line-height: 10vw;
 /* identical to box height */
 
     text-align: center;
@@ -91,7 +122,16 @@ h2.use{
     color: rgba(0, 0, 0, 0.7);
 }
 
-img.cam {
+@media (max-width: 800px) {
+    .use {
+        margin-bottom: 5%;
+        font-size: 8vw;
+        line-height: 10vw;
+    }
+  }
+
+
+.cam {
 
     display: block;
     margin: 0px auto;
@@ -99,22 +139,22 @@ img.cam {
     margin-top: 7%;
     margin-bottom: -8%;
     
-    max-width: 100%;
-    max-height: 100%;
+    width: 65%;
+    height: 70%;
    }
 
-img.ref {
+.ref {
     display: block;
     margin: 0px auto;
 
     margin-top: 7%;
     margin-bottom: -8%;
     
-    max-width: 100%;
-    max-height: 100%;
+    width: 55%;
+    height: 70%;
 }
 
-h2.footer {
+.footer {
 
     margin-top: 31%;
     margin-bottom: 0%;
@@ -122,10 +162,18 @@ h2.footer {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 3vw;
+    line-height: 3vw;
     text-align: center;
     letter-spacing: 0.115em;
 
     color: rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 800px) {
+    .footer {
+        margin-top: 140%;
+        font-size: 5vw;
+        line-height: 8vw;
+    }
+  }
