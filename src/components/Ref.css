@@ -1,153 +1,145 @@
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 728px) {
+  .반응형 {
+    margin-top: 10%;
+    position: relative;
+  }
 }
 
-@media (max-width: 800px) {
-    .반응형 {
-        margin-top: 10%;
-    }
+.backref {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+@media (max-width: 728px) {
+  .backimg {
+    width: 6vw;
+    height: 6vw;
   }
+}
 
 .제목 {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    font-size: 5vw;
+  font-size: 5vw;
+  text-align: center;
 }
 
 .제품사진 {
-    margin-left: -80%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
+  /* identical to box height */
+  color: #000000;
+}
+.carbon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
 
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 2vw;
-/* identical to box height */
-    color: #000000;
+@media (max-width: 728px) {
+  .carbon-container {
+    padding: 0;
+  }
 }
 
 .품명 {
-    margin-top: -3.8%;
-    margin-left: -40%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 2vw;
-/* identical to box height */
-    color: #000000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
+  /* identical to box height */
+  color: #000000;
+}
+.carbon-element {
+  display: block;
+  width: 25%;
+  text-align: center;
 }
 
 .탄소량 {
-    margin-top: -4%;
-    margin-left: 26%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 2vw;
-/* identical to box height */
-    color: #000000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
+  /* identical to box height */
+  color: #000000;
 }
 
 .탄소컬러 {
-    margin-top: -4%;
-    margin-left: 80%;
-
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2vw;
-    line-height: 2vw;
-/* identical to box height */
-    color: #000000;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
+  /* identical to box height */
+  color: #000000;
 }
 
-.firstline{
-    width: 100%;
+.firstline {
+  width: 100%;
 
-    border: 5px solid rgba(204, 204, 204, 0.3);
+  border: 5px solid rgba(204, 204, 204, 0.3);
 }
 
 @media (max-width: 800px) {
-    .firstline {
-        width: 100%;
-        border: 0.3vw solid rgba(204, 204, 204, 0.3);
+  .firstline {
+    width: 100%;
+    border: 0.3vw solid rgba(204, 204, 204, 0.3);
+  }
 }
-    }
 
-.imgbox{
-    margin-left: -80%;
-    margin-top: 0%;
-    margin-bottom: 3%;
+.imgbox {
 }
 
 .img {
-
-    width: 10vw;
-    height: 10vw;
+  width: 50%;
 }
 
 .foodbox {
-    margin-top: -11%;
-    margin-left: -40%;
 }
 
 .food {
-
-    
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 5vw;
-    text-align: center;
-    letter-spacing: -0.06em;
-
-    color: black;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 5vw;
+  text-align: center;
+  letter-spacing: -0.06em;
+  margin: 0 auto;
+  color: black;
 }
 
-
 .line {
-    margin-top: 1%;
-    margin-bottom: 1%;
+  width: 100%;
 
-    width: 100%;
-
-    border: 5px solid rgba(204, 204, 204, 0.3);
+  border: 5px solid rgba(204, 204, 204, 0.3);
 }
 
 @media (max-width: 800px) {
-    .line {
-        width: 100%;
-        border: 0.3vw solid rgba(204, 204, 204, 0.3);
+  .line {
+    width: 100%;
+    border: 0.3vw solid rgba(204, 204, 204, 0.3);
+  }
 }
-    }
-
 
 .carbonbox {
-    margin-left: 26%;
-    margin-top: -5.7%;
 }
-
 
 .carbon {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 5vw;
+  text-align: center;
+  letter-spacing: -0.06em;
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 5vw;
-    text-align: center;
-    letter-spacing: -0.06em;
-
-    color: #CCCCCC;
-
+  color: #cccccc;
 }
-
 
 /* .colorbox {
     margin-left: 87.9%;
