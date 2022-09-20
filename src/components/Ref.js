@@ -10,7 +10,7 @@ export const Ref = () => {
   const [list, setList] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:8000/importHistory/5c:cf:7f:d1:a1:47:")
+      .get("http://192.168.10.220:8000/importHistory/5c:cf:7f:d1:a1:47:")
       .then(({ data }) => {
         console.log(data);
         setList((prev) => [...data]);
@@ -22,7 +22,7 @@ export const Ref = () => {
       <>
         <div key={idx} className="carbon-container">
           <div className="imgbox carbon-element">
-            <img className="img" src={food.jpg}></img>
+            <img className="REFimg" src={food.jpg}></img>
           </div>
           <div className="foodbox carbon-element">
             <span className="food">{food.name}</span>
@@ -63,8 +63,8 @@ export const Ref = () => {
 };
 
 const D = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 5vw;
+  height: 5vw;
   margin: 0 auto;
   background-color: ${({ carbon }) => {
     if (carbon >= 180) return "rgba(255, 0, 0, 0.8)";

@@ -11,8 +11,15 @@
   left: 2%;
 }
 
+.backimg {
+  margin-top: 10%;
+  width: 6vw;
+  height: 6vw;
+}
+
 @media (max-width: 728px) {
   .backimg {
+    margin-top: 0;
     width: 6vw;
     height: 6vw;
   }
@@ -21,6 +28,8 @@
 .제목 {
   font-size: 5vw;
   text-align: center;
+  color: rgba(49, 165, 30, 0.7);
+  margin: 0;
 }
 
 .제품사진 {
@@ -96,8 +105,8 @@
 .imgbox {
 }
 
-.img {
-  width: 50%;
+.REFimg {
+  width: 40%;
 }
 
 .foodbox {
