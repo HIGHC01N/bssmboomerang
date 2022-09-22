@@ -9,6 +9,7 @@ import { Main } from "./components/Main";
 import { Ref } from "./components/Ref";
 import { Weather } from "./components/Weather";
 
+
 function App() {
   return (
     <div className="App">
@@ -23,5 +24,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
