@@ -3,26 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
-import WeatherProvider from './context';
-import theme from './theme';
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
-    <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <WeatherProvider>
-        <ColorModeScript initialColorMode="light" />
-        <App/>
-      </WeatherProvider>
-    </ChakraProvider>
-  </React.StrictMode>,
+
+    <App />
 );
-
-
-
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

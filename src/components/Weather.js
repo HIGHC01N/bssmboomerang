@@ -1,19 +1,7 @@
-import React from 'react';
-import { Center } from '@chakra-ui/react';
-import { Container } from '@chakra-ui/layout';
-import Content from './Content';
-import Header from './Header';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import "./Weather.css";
 
-
-export function Weather() {
-  return (
-    <Center minH="100vh">
-      <Container maxW="xl" flexFlow="column">
-        <Header />
-        <Content />
-      </Container>
-    </Center>
-  );
+export function Weather(props) {
+  return <div>hello</div>;
 }
-
-export default Weather;
