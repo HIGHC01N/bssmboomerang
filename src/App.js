@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CheckFood } from "./components/CheckFood";
 import { Main } from "./components/Main";
 import { Ref } from "./components/Ref";
-import { Weather } from "./components/Weather";
+import { Weathermenu } from "./components/Weathermenu";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/Ref" element={<Ref />} />
-          <Route exact path="/Weather" element={<Weather />} />
+          <Route exact path="/Weathermenu" element={<Weathermenu />} />
           <Route exact path="/" element={<Main />} />
           <Route path="/:macAddress" element={<CheckFood />}></Route>
         </Routes>

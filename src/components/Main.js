@@ -21,7 +21,7 @@ export const Main = () => {
           </div>
         </Link>
 
-        <Link to="/Weather" style={{ textDecoration: "none" }}>
+        <Link to="/Weathermenu" style={{ textDecoration: "none" }}>
           <div className="box">
             <img src="/img/Vector4.png" className="img"></img>
             <p className="text">날씨</p>
