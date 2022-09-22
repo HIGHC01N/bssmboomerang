@@ -112,6 +112,7 @@
 
 @media (max-width: 1000px) {
   .footer {
+    padding-bottom: 10vw;
     font-size: 5vw;
   }
 }
