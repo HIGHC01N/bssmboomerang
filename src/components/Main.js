@@ -1,9 +1,24 @@
 import { Link } from "react-router-dom";
+import {useState, useEffect } from 'react';
 import "./Main.css";
 
+
 export const Main = () => {
+  const [time, setTime] = useState(new Date());
+  
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+    return (() => clearInterval(id))
+  }, []);
+
   return (
     <div>
+      <div className="clock">
+      <span>{time.toLocaleTimeString()}</span>
+      </div>
       <h1 className="boom">부메랑</h1>
       <h2 className="use">냉장고 이용하기</h2>
       <div className="container">
@@ -27,10 +42,12 @@ export const Main = () => {
             <p className="text">날씨</p>
           </div>
         </Link>
+
       </div>
 
       <footer>
-        <h2 className="footer"> 이용할 서비스를 선택해 주십시요</h2>
+        <div className="doc"></div>
+        <div className="footer"> 이용할 서비스를 선택해 주십시요</div>
       </footer>
     </div>
   );

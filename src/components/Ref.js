@@ -10,7 +10,7 @@ export const Ref = () => {
   const [list, setList] = useState([]);
   useEffect(() => {
     axios
-      .get("http://192.168.10.220:8000/importHistory/5c:cf:7f:d1:a1:47:")
+      .get("http://localhost:8000/importHistory/5c:cf:7f:d1:a1:47:")
       .then(({ data }) => {
         console.log(data);
         setList((prev) => [...data]);
@@ -43,7 +43,9 @@ export const Ref = () => {
       <div style={{ position: "relative" }}>
         <div className="backref">
           <Link to="/">
+            <div>
             <img className="backimg" src="/img/Vector5.png"></img>
+            </div>
           </Link>
         </div>
         <h1 className="제목">부메랑 인벤토리</h1>

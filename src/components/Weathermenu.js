@@ -1,7 +1,10 @@
 import { useEffect, useReducer } from "react";
 import CityInput from "./CityInput";
 import Weather from "./Weather";
-import AppContext, { appReducer, initialAppState } from "../provider/appContext";
+import AppContext, {
+  appReducer,
+  initialAppState,
+} from "../provider/appContext";
 import "./Weathermenu";
 import geoCoords from "../utils/geoCoords";
 import getWeather, {
@@ -12,9 +15,13 @@ import Forecast from "./Forecast";
 import Highlights from "./Highlights";
 import Hourly from "./Hourly";
 import Footer from "./Footer";
-import "./Weathermenu.css"
+import "./Weathermenu.css";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 export function Weathermenu() {
+  const navigate = useNavigate();
+  useEffect(() => {}, []);
+
   const [app, dispatchApp] = useReducer(appReducer, initialAppState);
   useEffect(() => {
     const date = new Date();
@@ -100,6 +107,14 @@ export function Weathermenu() {
     <AppContext.Provider value={{ app, dispatchApp }}>
       <section className="weathercontainer">
         <div className="col-left" style={app.isDark ? colLeftStyle : null}>
+          <div
+            className="weatherback"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            <img className="weatherbackimg" src="/img/Vector5.png"></img>
+          </div>
           <CityInput />
           <Weather />
         </div>

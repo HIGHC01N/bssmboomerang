@@ -130,3 +130,15 @@
     line-height: 10vw;
   }
 }
+
+.clock {
+  font-size: 3vw;
+  margin-bottom: -4%;
+}
+
+@media (max-width: 1000px) {
+  .clock {
+    font-size: 5vw;
+    margin-bottom: -10%;
+  }
+}

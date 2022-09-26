@@ -14,7 +14,7 @@ export function CheckFood() {
   useEffect(() => {
     const countdown = setInterval(() => {
       axios
-        .get(`http://192.168.10.220:8000/importFood/${macAddress}`)
+        .get(`http://localhost:8000/importFood/${macAddress}`)
         .then(({ data }) => {
           setdata((prev) => {
             return data;
@@ -68,13 +68,12 @@ export function CheckFood() {
         </div>
       ) : (
         <div className="containerbox">
-          <div className="back">
-            <img
-              src="/img/Vector5.png"
+          <div className="back"
               onClick={() => {
                 navigate("/");
               }}
-            ></img>
+            >
+            <img className="Checkback" src="/img/Vector5.png"></img>
           </div>
           <img src="/img/Vector2.png" className="arrow"></img>
           <div className="start">시작하기</div>

@@ -11,6 +11,7 @@ function CityInput() {
   } = useContext(AppContext);
   let time;
   return (
+    
     <div className="input-group">
       <span
         onClick={async () => {

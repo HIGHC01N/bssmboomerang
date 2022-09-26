@@ -23,6 +23,22 @@
   max-height: 40%;
 }
 
+.Checkback {
+  margin-top: -7%;
+  margin-bottom: -7%;
+  max-width: 5vw;
+  max-height: 5vw;
+}
+
+
+@media (max-width: 800px) {
+  .Checkback {
+    margin-top: 2%;
+    max-width: 40%;
+    max-height: 40%;
+  }
+}
+
 @media (max-width: 800px) {
   .arrow {
     margin-top: -5%;
