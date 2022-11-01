@@ -12,10 +12,21 @@ export const Ref = () => {
     axios
       .get("http://localhost:8000/importHistory/5c:cf:7f:d1:a1:47:")
       .then(({ data }) => {
+        setList(data);
         console.log(data);
-        setList((prev) => [...data]);
       });
   }, []);
+
+  const add = () => {
+    let sum = 0;
+    list.map((food) => (sum += food.carbon));
+    return sum;
+  };
+
+  const alldelete = () => {
+    axios.post("http://localhost:8000/alldelete");
+    setList([]);
+  };
 
   const item = list.map((food, idx) => {
     return (
@@ -44,7 +55,7 @@ export const Ref = () => {
         <div className="backref">
           <Link to="/">
             <div>
-            <img className="backimg" src="/img/Vector5.png"></img>
+              <img className="backimg" src="/img/Vector5.png"></img>
             </div>
           </Link>
         </div>
@@ -58,8 +69,27 @@ export const Ref = () => {
         <p className="탄소컬러 carbon-element">탄소컬러</p>
       </div>
       <div className="firstline"></div>
-
-      <div>{item}</div>
+      {!list.length ? (
+        <div className="EmptyCenter">
+        <div className="EmptyBody">
+          <div className="emptyposition">
+            <img src="/img/empty.png" className="emptyimg"></img>
+          </div>
+          <span className="emptytext">냉장고가 텅 비어 있어요</span>
+        </div>
+        </div>
+      ) : (
+        <div>{item}</div>
+      )}
+      <div className="footerbox">
+        <div className="deletebox" onClick={alldelete}>
+          삭&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;제
+        </div>
+        <div className="totalbox2">
+          <span>탄소량 총합 : </span>
+          <span>{add()}g</span>
+        </div>
+      </div>
     </div>
   );
 };

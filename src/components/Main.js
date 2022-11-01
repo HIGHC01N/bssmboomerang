@@ -17,8 +17,13 @@ export const Main = () => {
   return (
     <div>
       <div className="clock">
-      <span>{time.toLocaleTimeString()}</span>
+      <span className="clockcenter">{time.toLocaleTimeString()}</span>
       </div>
+      <Link to="/Info" style={{ textDecoration: "none" }}>
+      <div className="warningposition">
+        <img src="/img/warning.png" className="warning"></img>
+      </div>
+      </Link>
       <h1 className="boom">부메랑</h1>
       <h2 className="use">냉장고 이용하기</h2>
       <div className="container">

@@ -1,0 +1,18 @@
+.InfoBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InfoBackDiv {
+  position: absolute;
+  left: 0;
+  margin-left: 2vw;
+  margin-top: 2vw;
+}
+
+.InfoBackImg {
+  filter: opacity(0.5) drop-shadow(0 0 0 white);
+  width: 4vw;
+}
+

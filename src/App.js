@@ -8,6 +8,7 @@ import { CheckFood } from "./components/CheckFood";
 import { Main } from "./components/Main";
 import { Ref } from "./components/Ref";
 import { Weathermenu } from "./components/Weathermenu";
+import { Info } from "./components/Info"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/Ref" element={<Ref />} />
           <Route exact path="/Weathermenu" element={<Weathermenu />} />
           <Route exact path="/" element={<Main />} />
+          <Route exact path="/Info" element={<Info />}/>
           <Route path="/:macAddress" element={<CheckFood />}></Route>
         </Routes>
       </BrowserRouter>

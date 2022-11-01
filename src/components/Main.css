@@ -4,6 +4,26 @@
   text-align: center;
 }
 
+.warningposition {
+  margin-top: -2vw;
+  margin-right: 2vw;
+  position: absolute;
+  right: 0;
+}
+
+.warning {
+  width: 5vw;
+}
+
+.clock {
+  margin-top: -2vw;
+  margin-left: 2vw;
+  font-size: 4vw;
+  left: 0;
+  position: absolute;
+  color: #ccc;
+}
+
 .box {
   width: 22vw;
   height: 22vw;
@@ -86,6 +106,15 @@
 }
 
 @media (max-width: 1000px) {
+  .clock {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1000px) {
   .container {
     flex-direction: column;
     justify-content: center;
@@ -106,7 +135,7 @@
 
 @media (max-width: 1000px) {
   .boom {
-    margin-top: 15%;
+    margin-top: 10%;
   }
 }
 
@@ -131,14 +160,22 @@
   }
 }
 
-.clock {
-  font-size: 3vw;
-  margin-bottom: -4%;
-}
 
 @media (max-width: 1000px) {
   .clock {
-    font-size: 5vw;
-    margin-bottom: -10%;
+    margin-top: -8vw;
   }
 }
+
+@media (max-width: 1000px) {
+  .warningposition {
+    margin-top: -9vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .warning {
+    width: 7vw;
+  }
+}
+

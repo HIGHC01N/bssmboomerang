@@ -60,10 +60,10 @@ export function CheckFood() {
 
             <D carbon={data.carbon} className="carbong">
               {" "}
-              {data.carbon}g
+              {data.carbon}g<br/>
             </D>
-            <span className="calorie">칼로리는</span>
-            <h4 className="third">{data.calorie}Kcal</h4>
+            <span className="calorie">칼로리는<br/></span>
+            <span className="third">{data.calorie}Kcal</span>
           </div>
         </div>
       ) : (
@@ -93,7 +93,7 @@ export function CheckFood() {
   );
 }
 
-const D = styled.h3`
+const D = styled.span`
   color: ${({ carbon }) => {
     if (carbon >= 180) return "red";
     else if (carbon >= 160) return "blue";
