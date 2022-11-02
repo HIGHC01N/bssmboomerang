@@ -1,4 +1,4 @@
-@media (max-width: 728px) {
+@media (max-width: 800px) {
   .반응형 {
     margin-top: 10%;
     position: relative;
@@ -17,7 +17,7 @@
   height: 4vw;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 800px) {
   .backimg {
     margin-top: 0;
     width: 6vw;
@@ -30,6 +30,7 @@
   text-align: center;
   color: rgba(49, 165, 30, 0.7);
   margin: 0;
+  z-index: -1;
 }
 
 .제품사진 {
@@ -47,7 +48,7 @@
   align-items: center;
 }
 
-@media (max-width: 728px) {
+@media (max-width: 800px) {
   .carbon-container {
     padding: 0;
   }
@@ -64,7 +65,7 @@
 }
 .carbon-element {
   display: block;
-  width: 25%;
+  width: 20%;
   text-align: center;
 }
 
@@ -85,6 +86,15 @@
   font-size: 2vw;
   line-height: 2vw;
   /* identical to box height */
+  color: #000000;
+}
+
+.개수 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
   color: #000000;
 }
 
@@ -147,6 +157,42 @@
   letter-spacing: -0.06em;
 
   color: #cccccc;
+}
+
+.count {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.minus {
+  font-weight: bolder;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #555555;
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+}
+
+.plus {
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #555555;
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+}
+
+.countnumber {
+  font-size: 2vw;
 }
 
 /* .colorbox {
@@ -232,3 +278,24 @@
   color: rgb(151, 151, 151);
   font-weight: bold;
 }
+
+.warningpositionInInfo {
+  top: 0.7vw;
+  right: 1vw;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 1000px) {
+  .warningpositionInInfo {
+    margin-top: -0.7vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .warningpositionInInfo {
+    margin-top: 9vw;
+  }
+}
+
+

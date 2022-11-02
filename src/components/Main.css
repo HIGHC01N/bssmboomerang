@@ -5,10 +5,10 @@
 }
 
 .warningposition {
-  margin-top: -2vw;
-  margin-right: 2vw;
+  top: 0.7vw;
+  right: 1vw;
   position: absolute;
-  right: 0;
+  z-index: 1;
 }
 
 .warning {
@@ -16,10 +16,9 @@
 }
 
 .clock {
-  margin-top: -2vw;
-  margin-left: 2vw;
+  top: 1vw;
+  left: 2vw;
   font-size: 4vw;
-  left: 0;
   position: absolute;
   color: #ccc;
 }
@@ -43,6 +42,12 @@
   letter-spacing: -0.09em;
 
   color: rgba(0, 0, 0, 0.5);
+}
+
+.textcenter {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
 }
 
 .boom {
@@ -105,14 +110,6 @@
   margin-top: 12%;
 }
 
-@media (max-width: 1000px) {
-  .clock {
-    margin-top: 3vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 @media (max-width: 1000px) {
   .container {
@@ -163,13 +160,11 @@
 
 @media (max-width: 1000px) {
   .clock {
-    margin-top: -8vw;
   }
 }
 
 @media (max-width: 1000px) {
   .warningposition {
-    margin-top: -9vw;
   }
 }
 

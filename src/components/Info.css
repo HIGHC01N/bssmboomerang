@@ -1,18 +1,311 @@
-.InfoBody {
+.InfoMain {
+}
+
+.InfoNav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 5vw;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.InfoNav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.LogoTittle {
+  display: flex;
+  align-items: center;
+}
+
+.InfoText {
+  margin-left: 2vw;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vw;
+  /* identical to box height */
+
+  letter-spacing: 0.355em;
+
+  color: #ffffff;
+}
+
+.InfoLogo {
+  width: 3.5vw;
+}
+
+.NavText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 39px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.InfoBackDiv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.InfoBackDiv {
-  position: absolute;
-  left: 0;
-  margin-left: 2vw;
-  margin-top: 2vw;
-}
-
 .InfoBackImg {
-  filter: opacity(0.5) drop-shadow(0 0 0 white);
-  width: 4vw;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  opacity: ;
 }
 
+.InfoBetween {
+  margin-top: -75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .InfoLeft {
+  width: 30vw;
+  height: 5vh;
+} */
+
+/* .InfoRight {
+  width: 30vw;
+  height: 5vh;
+} */
+
+.당신이먹는음식에는 {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2vw;
+  line-height: 2vw;
+  /* identical to box height */
+
+  letter-spacing: -0.05em;
+
+  color: #ffffff;
+}
+
+.환경을오염시키는 {
+  display: block;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vw;
+  line-height: 3.5vw;
+  /* identical to box height */
+
+  letter-spacing: 0.095em;
+
+  color: #ffffff;
+}
+
+.탄소 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 5vw;
+  line-height: 6vw;
+
+  color: #9acd32;
+}
+
+.가있습니다 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vw;
+  line-height: 6vw;
+  /* identical to box height */
+
+  letter-spacing: -0.09em;
+
+  color: #ffffff;
+}
+
+.소개 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3vw;
+  /* identical to box height */
+  opacity: 0.8;
+  letter-spacing: -0.09em;
+
+  color: #ffffff;
+}
+
+.소개박스 {
+  width: 35vw;
+  height: 15vw;
+  background-color: white;
+  opacity: 0.8;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.신호등 {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.신호등빨간색 {
+  width: 5vw;
+  height: 5vw;
+  background-color: #ff3b30;
+  border-radius: 0.5vw;
+}
+
+.신호등노란색 {
+  width: 5vw;
+  height: 5vw;
+  background-color: #ffc041;
+  border-radius: 0.5vw;
+}
+
+.신호등초록색 {
+  width: 5vw;
+  height: 5vw;
+  background-color: #4cd964;
+  border-radius: 0.5vw;
+}
+
+.인포탄소컬러 {
+  font-size: 2vw;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  line-height: 5vw;
+}
+
+.신호등소개 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.신호등소개글 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 5vw;
+}
+
+@media (max-width: 1000px) {
+  .InfoNav {
+    height: 10vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .InfoText {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .InfoLogo {
+    width: 5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .NavText{
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .환경을오염시키는 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .당신이먹는음식에는 {
+    font-size: 6vw;
+    line-height: 7vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .탄소 {
+    font-size: 12vw;
+    line-height: 12vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .가있습니다 {
+    font-size: 8vw;
+    line-height: 12vw;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .InfoBetween {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .InfoRight {
+    margin-top: 25vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .InfoLeft {
+    margin-top: vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .소개 {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .소개박스 {
+    width: 80vw;
+    height: 35vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .인포탄소컬러 {
+    font-size: 5vw;
+    line-height: 14vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .신호등빨간색,
+  .신호등초록색,
+  .신호등노란색 {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .신호등소개글 {
+    font-size: 3vw;
+    line-height: 10vw;
+  }
+}

@@ -28,6 +28,11 @@ export function CheckFood() {
   return (
     <div className="App">
       {/* <meta http-equiv={refresh.isRefresh ? "refresh" : "none"} content="0.7"></meta> */}
+      <Link to="/Info">
+          <div className="warningposition">
+            <img src="/img/warning.png" className="warning"></img>
+          </div>
+        </Link>
       {data.objectId ? (
         <div className="jpgbox">
           <div>
@@ -41,7 +46,7 @@ export function CheckFood() {
                 }}
               >
                 <span className="data">{data.name} </span>
-                <span className="가">가</span>
+                <span className="가">이(가)</span>
               </div>
               <span className="recognize">인식되었습니다</span>
             </div>

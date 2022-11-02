@@ -113,7 +113,7 @@ export function Weathermenu() {
               navigate("/");
             }}
           >
-            <img className="weatherbackimg" src="/img/Vector5.png"></img>
+            <img className="weatherbackimg" src="/img/Vector5.png" ></img>
           </div>
           <CityInput />
           <Weather />

@@ -1,0 +1,46 @@
+.Body404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Text404 {
+  margin-top: 3vw;
+  font-size: 20vw;
+  font-weight: bolder;
+  color: gray;
+}
+
+.NotFound {
+  font-size: 3vw;
+  font-weight: bold;
+  color: gray;
+}
+
+.Info404 {
+  margin-top: 4vw;
+  font-size: 3vw;
+  font-weight: bold;
+  color: gray;
+}
+
+.Home404 {
+  font-size: 2vw;
+  margin-top: 3vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(49, 165, 30, 0.7);
+  width: 20vw;
+  height: 5vw;
+  border-radius: 20px;
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .Body404 {
+    margin-top: 40vw;
+  }
+}
