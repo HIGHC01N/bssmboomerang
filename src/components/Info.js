@@ -15,7 +15,7 @@ export function Info() {
           <Link to="/Service" style={{ textDecoration: "none" }}>
             <span className="NavText">서비스소개</span>
           </Link>
-          <Link to="/Camera" style={{ textDecoration: "none" }}>
+          <Link to="/mac/5c:cf:7f:d1:a1:47:" style={{ textDecoration: "none" }}>
             <span className="NavText">물건인식</span>
           </Link>
           <Link to="/Ref" style={{ textDecoration: "none" }}>
@@ -24,7 +24,7 @@ export function Info() {
           <Link to="/Guide" style={{ textDecoration: "none" }}>
             <span className="NavText">가이드</span>
           </Link>
-          <Link to="My" style={{ textDecoration: "none" }}>
+          <Link to="/My" style={{ textDecoration: "none" }}>
             <span className="NavText">MY</span>
           </Link>
         </div>
