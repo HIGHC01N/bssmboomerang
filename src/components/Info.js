@@ -15,7 +15,7 @@ export function Info() {
           <Link to = "/Service" style={{ textDecoration: "none" }}>
           <span className="NavText">서비스소개</span>
           </Link>
-          <Link to="/mac/5c:cf:7f:d1:a1:47:"  style={{ textDecoration: "none" }}>
+          <Link to="/Camera"  style={{ textDecoration: "none" }}>
           <span className="NavText">물건인식</span>
           </Link>
           <Link to = "/Ref" style={{ textDecoration: "none" }}>
@@ -35,7 +35,7 @@ export function Info() {
         </div>
         <div className="InfoBetween">
           <div className="InfoLeft">
-            <span className="당신이먹는음식에는">당신이 먹는 음식에는</span>
+            <span className="당신이먹는음식에는">당신이 사용하는 모든 것은</span>
             <span className="환경을오염시키는">환경을 오염시키는</span>
             <span className="탄소">탄소</span>
             <span className="가있습니다">가 있습니다.</span>

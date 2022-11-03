@@ -7,6 +7,7 @@ import "./Ref.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Info } from "./Info";
+import { math } from "@tensorflow/tfjs";
 
 export const Ref = () => {
   const [list, setList] = useState([]);
@@ -25,10 +26,30 @@ export const Ref = () => {
     return sum;
   };
 
+  const amountadd = () => {
+    let amountplus = 0;
+    list.map((food) => (amountplus += food.amount));
+    return amountplus;
+  }
+
+  const addcalorie = () => {
+    let totalcalorie = 0;
+    list.map((food) => (totalcalorie += food.calorie*food.amount));
+    return totalcalorie;
+  }
+
+  const addtree = () => {
+    let totaltree = 0;
+    list.map((food) => (totaltree += ((food.amount*food.carbon)/6500)));
+    return totaltree.toFixed(2);
+  }
+
   const alldelete = () => {
     axios.post("http://localhost:8000/alldelete");
     setList([]);
   };
+
+
 
   const updateDBAmount = (objectId, amount) => {
     axios.post("http://localhost:8000/updateAmount", {
@@ -60,7 +81,17 @@ export const Ref = () => {
           <div className="carbonbox carbon-element">
             <span className="carbon">{food.amount*food.carbon}g</span>
           </div>
-          <D carbon={food.carbon} className="carbon-element"></D>
+          <div className="kaloriebox carbon-element">
+            <span className="kalorie">{food.calorie*food.amount}Kcal</span>
+          </div>
+          <div className="carbon-element">
+          <div className="carbon-element">
+            <div className="treecenter">
+            <img className="tree" src="/img/tree.png"></img>
+            <span className="treetext">{(food.amount*food.carbon/6500).toFixed(2)}</span>
+            </div>
+          </div>
+          </div>
           <div className="amount carbon-element">
             <div className="count">
               <div
@@ -113,7 +144,8 @@ export const Ref = () => {
         <p className="제품사진 carbon-element">제품사진</p>
         <p className="품명 carbon-element">품명</p>
         <p className="탄소량 carbon-element">탄소량</p>
-        <p className="탄소컬러 carbon-element">탄소컬러</p>
+        <p className="칼로리 carbon-element">칼로리</p>
+        <p className="탄소컬러 carbon-element">나무</p>
         <p className="개수 carbon-element">개수</p>
       </div>
       <div className="firstline"></div>
@@ -129,30 +161,35 @@ export const Ref = () => {
       ) : (
         <div>{item}</div>
       )}
+      <div className="footerboxcenter">
       <div className="footerbox">
-        <div className="deletebox" onClick={alldelete}>
-          비&nbsp;&nbsp;&nbsp;우&nbsp;&nbsp;&nbsp;기
+        <div className="footergroup">
+        <div className="footerboxtext">
+          <span className="footernav">총 탄소량</span>
+          <span className="footernav">총 칼로리</span>
+          <span className="footernav">나무 합</span>
+          <span className="footernav">총합</span>
+          <span className="footernav">전체삭제</span>
+          </div>
+          <div className="foooterboxnav">
+          <span className="footer-element">{add()}g</span>
+          <span className="footer-element">{addcalorie()}kcal</span>
+          <span className="footer-element">{addtree()} 그루</span>
+          <span className="footer-element">{amountadd()}개    </span>
+          <div className="deleteboxwidth">
+          <div className="deletebox" onClick={alldelete}>
+          삭제
         </div>
-        <div className="totalbox2">
-          <span>탄소량 총합 : </span>
-          <span>{add()}g</span>
+        </div>
+          </div>
+          </div>
         </div>
       </div>
+      <div className="foooterblock"></div>
     </div>
   );
 };
 
-const D = styled.div`
-  width: 5vw;
-  height: 5vw;
-  margin: 0 auto;
-  background-color: ${({ carbon }) => {
-    if (carbon >= 180) return "rgba(255, 0, 0, 0.8)";
-    else if (carbon >= 160) return "black";
-    else return "blue";
-  }};
-  border-radius: 10px;
-`;
 
 const GrayLine = styled.hr`
   width: 100%;

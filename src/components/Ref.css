@@ -43,6 +43,7 @@
   color: #000000;
 }
 .carbon-container {
+  height: 8vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -64,7 +65,8 @@
   color: #000000;
 }
 .carbon-element {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 20%;
   text-align: center;
 }
@@ -76,6 +78,15 @@
   font-size: 2vw;
   line-height: 2vw;
   /* identical to box height */
+  color: #000000;
+}
+
+.칼로리 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2vw;
   color: #000000;
 }
 
@@ -122,12 +133,13 @@
 }
 
 .food {
+  white-space: nowrap;
   font-family: "Inter";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 350;
   font-size: 5vw;
   text-align: center;
-  letter-spacing: -0.06em;
+  letter-spacing: -0.09em;
   margin: 0 auto;
   color: black;
 }
@@ -152,10 +164,20 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 800;
-  font-size: 5vw;
+  font-size: 3vw;
   text-align: center;
   letter-spacing: -0.06em;
 
+  color: #cccccc;
+}
+
+.kalorie {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3vw;
+  text-align: center;
+  letter-spacing: -0.06em;
   color: #cccccc;
 }
 
@@ -192,6 +214,7 @@
 }
 
 .countnumber {
+  margin: 1.5vw;
   font-size: 2vw;
 }
 
@@ -207,42 +230,114 @@
     border-radius: 10px;
 } */
 
+.footer-element {
+  white-space: nowrap;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4vw;
+  text-align: center;
+  letter-spacing: -0.06em;
+
+  color: rgb(151, 151, 151);
+}
+
 .footerbox {
+  position: fixed;
+  bottom: 2vw;
+
+  height: 12vw;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: 0vw 1vw 4vw rgba(0, 0, 0, 0.25);
+  border-radius: 1vw;
+}
+
+.footerboxcenter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerboxtext {
+  width: 100%;
+  height: 5vw;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.footernav {
+  width: 15vw;
+  align-items: center;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 39px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.foooterboxnav {
+  width: auto;
+  width: 93vw;
+  height: 5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footergroup {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foooterblock {
+  width: 100%;
+  height: 14vw;
 }
 
 .totalbox2 {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: blue;
-  color: white;
-  align-items: center;
   font-size: 5vw;
   letter-spacing: -0.08em;
   font-weight: 800;
-  width: 47vw;
-  height: 10vw;
-  margin: auto;
-  margin-top: 0.5%;
   /* border: 5px solid #cccccc; */
   border-radius: 20px;
 }
 
 .deletebox {
   display: flex;
-  font-size: 5vw;
   color: white;
-  font-weight: bold;
-  background-color: red;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  width: 47vw;
-  height: 10vw;
-  margin: auto;
-  margin-top: 0.5%;
+  font-size: 1vw;
+  font-weight: bold;
+  background-color: red;
+  width: 5vw;
+  height: 5vw;
   /* border: 5px solid #cccccc; */
-  border-radius: 20px;
+  border-radius: 1vw;
+}
+
+.deleteboxwidth {
+  width: 15vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .EmptyBody {
@@ -265,7 +360,7 @@
 }
 
 .emptyposition {
-  margin-top: -3vw;
+  margin-top: -7vw;
 }
 
 .emptyimg {
@@ -286,6 +381,20 @@
   z-index: 1;
 }
 
+.tree {
+  width: 150%;
+}
+
+.treecenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.treetext {
+  font-size: 1vw;
+}
+
 @media (max-width: 1000px) {
   .warningpositionInInfo {
     margin-top: -0.7vw;
@@ -298,4 +407,112 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .EmptyCenter {
+    height: 60vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .EmptyCenter {
+    height: 170vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .emptyimg {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .emptytext {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footerbox {
+    width: 93vw;
+    height: 22vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footerboxtext {
+    height: 12vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footernav {
+    font-size: 4vw;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 1000px) {
+  .emptyposition {
+    margin-top: -10vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .emptyposition {
+    margin-top: 0vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .emptyposition {
+    margin-top: -100vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .deletebox {
+    font-size: 2vw;
+
+    width: 9vw;
+    height: 9vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tree {
+    width: 4.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tree {
+    font-size: 0.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .treetext {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .minus {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .plus {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .carbon-element {
+    font-size: 3vw;
+  }
+}
 
