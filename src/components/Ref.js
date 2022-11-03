@@ -22,7 +22,7 @@ export const Ref = () => {
 
   const add = () => {
     let sum = 0;
-    list.map((food) => (sum += food.carbon*food.amount));
+    list.map((food) => (sum += food.carbon * food.amount));
     return sum;
   };
 
@@ -30,26 +30,24 @@ export const Ref = () => {
     let amountplus = 0;
     list.map((food) => (amountplus += food.amount));
     return amountplus;
-  }
+  };
 
   const addcalorie = () => {
     let totalcalorie = 0;
-    list.map((food) => (totalcalorie += food.calorie*food.amount));
+    list.map((food) => (totalcalorie += food.calorie * food.amount));
     return totalcalorie;
-  }
+  };
 
   const addtree = () => {
     let totaltree = 0;
-    list.map((food) => (totaltree += ((food.amount*food.carbon)/6500)));
+    list.map((food) => (totaltree += (food.amount * food.carbon) / 6500));
     return totaltree.toFixed(2);
-  }
-
-  const alldelete = () => {
-    axios.post("http://localhost:8000/alldelete");
-    setList([]);
   };
 
-
+  const alldelete = async () => {
+    await axios.post("http://localhost:8000/alldelete");
+    setList([]);
+  };
 
   const updateDBAmount = (objectId, amount) => {
     axios.post("http://localhost:8000/updateAmount", {
@@ -63,9 +61,10 @@ export const Ref = () => {
     const selFood = list.find((d) => d.objectId === objectId);
     selFood.amount = amount;
     if (amount === 0) {
-      setList(list.filter((d) => d.objectId !== objectId));
+      setList([...list.filter((d) => d.objectId !== objectId)]);
+    } else {
+      setList([...list]);
     }
-    setList([...list]);
   };
 
   const item = list.map((food, idx) => {
@@ -79,18 +78,20 @@ export const Ref = () => {
             <span className="food">{food.name}</span>
           </div>
           <div className="carbonbox carbon-element">
-            <span className="carbon">{food.amount*food.carbon}g</span>
+            <span className="carbon">{food.amount * food.carbon}g</span>
           </div>
           <div className="kaloriebox carbon-element">
-            <span className="kalorie">{food.calorie*food.amount}Kcal</span>
+            <span className="kalorie">{food.calorie * food.amount}Kcal</span>
           </div>
           <div className="carbon-element">
-          <div className="carbon-element">
-            <div className="treecenter">
-            <img className="tree" src="/img/tree.png"></img>
-            <span className="treetext">{(food.amount*food.carbon/6500).toFixed(2)}</span>
+            <div className="carbon-element">
+              <div className="treecenter">
+                <img className="tree" src="/img/tree.png"></img>
+                <span className="treetext">
+                  {((food.amount * food.carbon) / 6500).toFixed(2)}
+                </span>
+              </div>
             </div>
-          </div>
           </div>
           <div className="amount carbon-element">
             <div className="count">
@@ -162,26 +163,26 @@ export const Ref = () => {
         <div>{item}</div>
       )}
       <div className="footerboxcenter">
-      <div className="footerbox">
-        <div className="footergroup">
-        <div className="footerboxtext">
-          <span className="footernav">총 탄소량</span>
-          <span className="footernav">총 칼로리</span>
-          <span className="footernav">나무 합</span>
-          <span className="footernav">총합</span>
-          <span className="footernav">전체삭제</span>
-          </div>
-          <div className="foooterboxnav">
-          <span className="footer-element">{add()}g</span>
-          <span className="footer-element">{addcalorie()}kcal</span>
-          <span className="footer-element">{addtree()} 그루</span>
-          <span className="footer-element">{amountadd()}개    </span>
-          <div className="deleteboxwidth">
-          <div className="deletebox" onClick={alldelete}>
-          삭제
-        </div>
-        </div>
-          </div>
+        <div className="footerbox">
+          <div className="footergroup">
+            <div className="footerboxtext">
+              <span className="footernav">총 탄소량</span>
+              <span className="footernav">총 칼로리</span>
+              <span className="footernav">나무 합</span>
+              <span className="footernav">총합</span>
+              <span className="footernav">전체삭제</span>
+            </div>
+            <div className="foooterboxnav">
+              <span className="footer-element">{add()}g</span>
+              <span className="footer-element">{addcalorie()}kcal</span>
+              <span className="footer-element">{addtree()} 그루</span>
+              <span className="footer-element">{amountadd()}개 </span>
+              <div className="deleteboxwidth">
+                <div className="deletebox" onClick={alldelete}>
+                  삭제
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -189,7 +190,6 @@ export const Ref = () => {
     </div>
   );
 };
-
 
 const GrayLine = styled.hr`
   width: 100%;
