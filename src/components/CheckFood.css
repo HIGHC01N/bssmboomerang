@@ -122,8 +122,9 @@
 
 @media (max-width: 800px) {
   .market {
-    width: 20vw;
-    height: 20vw;
+    border-radius: 30px;
+    width: 15vw;
+    height: 15vw;
   }
 }
 
