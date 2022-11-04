@@ -97,13 +97,13 @@
 }
 
 .market {
-  margin-left: 88%;
-  margin-top: -11%;
+  bottom: 2vw;
+  right: 2vw;
 
   width: 7vw;
   height: 7vw;
 
-  background: #ccc;
+  background: rgb(222, 222, 222);
   /* box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.2); */
   /* border: 1px solid black; */
   border-radius: 10px;
@@ -120,8 +120,6 @@
 
 @media (max-width: 800px) {
   .market {
-    margin-left: -0%;
-    margin-top: 10%;
     width: 20vw;
     height: 20vw;
   }
