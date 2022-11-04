@@ -11,6 +11,7 @@ import { Ref } from "./components/Ref";
 import { Weathermenu } from "./components/Weathermenu";
 import { Info } from "./components/Info";
 import { NotFound } from "./components/NotFound";
+import { Camera } from "./components/Camera";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/Weathermenu" element={<Weathermenu />} />
           <Route exact path="/" element={<Main />} />
           <Route exact path="/Info" element={<Info />} />
+          <Route exact path="/Camera" element={<Camera />} />
           <Route exact path="*" element={<NotFound />} />
           <Route path="/mac/:macAddress" element={<CheckFood />}></Route>
         </Routes>
