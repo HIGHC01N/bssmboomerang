@@ -97,6 +97,8 @@
 }
 
 .market {
+  position: fixed;
+
   bottom: 2vw;
   right: 2vw;
 
