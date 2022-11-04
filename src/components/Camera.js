@@ -1,8 +1,8 @@
-import React from 'react';
-import * as mobilenet from '@tensorflow-models/mobilenet';
-import * as tf from '@tensorflow/tfjs';
+import React from "react";
+import * as mobilenet from "@tensorflow-models/mobilenet";
+import * as tf from "@tensorflow/tfjs";
 
-export const Camera = ()=> {
+export const Camera = () => {
   let net;
   const camera = React.useRef();
   const figures = React.useRef();
@@ -28,10 +28,10 @@ export const Camera = ()=> {
       await tf.nextFrame();
     }
   };
-  
-React.useEffect(()=> {
-  run();
-});
+
+  React.useEffect(() => {
+    run();
+  });
 
   return (
     <>
@@ -41,8 +41,8 @@ React.useEffect(()=> {
         playsInline
         muted={true}
         ref={camera}
-        width="870"
-        height="534"
+        width="100%"
+        height="100%"
       />
     </>
   );
