@@ -14,7 +14,7 @@ export function CheckFood() {
   useEffect(() => {
     const countdown = setInterval(() => {
       axios
-        .get(`http://localhost:8000/importFood/${macAddress}`)
+        .get(`https://boomerang-server.herokuapp.com/importFood/${macAddress}`)
         .then(({ data }) => {
           setdata((prev) => {
             return data;

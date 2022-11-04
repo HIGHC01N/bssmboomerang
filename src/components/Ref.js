@@ -13,7 +13,7 @@ export const Ref = () => {
   const [list, setList] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:8000/importHistory/5c:cf:7f:d1:a1:47:")
+      .get("https://boomerang-server.herokuapp.com/importHistory/5c:cf:7f:d1:a1:47:")
       .then(({ data }) => {
         setList(data);
         console.log(data, "DDDDD");
@@ -45,12 +45,12 @@ export const Ref = () => {
   };
 
   const alldelete = async () => {
-    await axios.post("http://localhost:8000/alldelete");
+    await axios.post("https://boomerang-server.herokuapp.com/alldelete");
     setList([]);
   };
 
   const updateDBAmount = (objectId, amount) => {
-    axios.post("http://localhost:8000/updateAmount", {
+    axios.post("https://boomerang-server.herokuapp.com/updateAmount", {
       machineId: "5c:cf:7f:d1:a1:47:",
       amount,
       objectId,
