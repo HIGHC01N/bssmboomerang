@@ -51,7 +51,7 @@ export const Main = () => {
 
       <footer>
         <div className="doc"></div>
-        <div className="footer"> 이용할 서비스를 선택해 주십시요</div>
+        <div className="footer"> 이용할 서비스를 선택해 주십시오</div>
       </footer>
     </div>
   );

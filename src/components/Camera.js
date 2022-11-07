@@ -1,6 +1,7 @@
 import React from "react";
 import * as mobilenet from "@tensorflow-models/mobilenet";
 import * as tf from "@tensorflow/tfjs";
+import "./Camera.css";
 
 export const Camera = () => {
   let net;
@@ -35,15 +36,16 @@ export const Camera = () => {
 
   return (
     <>
-      <div ref={figures}></div>
-      <video
-        autoPlay
-        playsInline
-        muted={true}
-        ref={camera}
-        width="100%"
-        height="100%"
-      />
+      <div className="center">
+        <div ref={figures}></div>
+        <video
+          className="video"
+          autoPlay
+          playsInline
+          muted={true}
+          ref={camera}
+        />
+      </div>
     </>
   );
 };
