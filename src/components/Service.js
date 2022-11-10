@@ -36,7 +36,7 @@ export function Service() {
             </div>
             <div className="두번째블럭오른쪽">
                 <span className="모바일">모바일로 더 손쉬운<br/>탄소량, 칼로리 확인<br/></span>
-                <span className="음식의칼로리">음식의 칼로리, 탄소량 확인이 간편합니다.<br/>여러 개의 음식도 카메라로 확인 할 수 있습니다.</span>
+                <span className="음식의칼로리">음식의 칼로리, 탄소량 확인이 간편합니다.<br/>여러 개의 음식도 카메라로 확인할 수 있습니다.</span>
                 <Link to="/Ref" style={{ textDecoration: "none" }}>
                 <div className="냉장고바로가기">
                     <span className="서비스냉장고현황">냉장고 현황</span>

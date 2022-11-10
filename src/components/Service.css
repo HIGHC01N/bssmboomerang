@@ -2,13 +2,18 @@
   position: fixed;
   display: flex;
   top: 0;
-
   width: 100%;
   height: 5vw;
   background-color: white;
   justify-content: center;
   align-items: center;
   border-bottom: solid 0.1vw rgb(200, 200, 200);
+}
+
+@media (max-width: 1000px) {
+  .serviceheader {
+    height: 10vw;
+  }
 }
 
 .servicelogo {
@@ -28,7 +33,13 @@
   margin-top: 5vw;
   width: 100%;
   height: 50vw;
-  background-color: rgba(102, 203, 86, 0.7);
+  background-color: rgba(146, 226, 134, 0.7);
+}
+
+@media (max-width: 1000px) {
+  .servicefirst {
+    margin-top: 10vw;
+  }
 }
 
 .첫번째블럭 {
@@ -45,6 +56,12 @@
   /* background-color: black; */
 }
 
+@media (max-width: 1000px) {
+    .첫번째블럭왼쪽 {
+      margin-left: 8vw;
+    }
+  }
+
 .첫번째블럭오른쪽 {
   /* width: 100px;
   height: 100px;
@@ -58,16 +75,34 @@
   letter-spacing: -0.06em;
 }
 
+@media (max-width: 1000px) {
+  .이미모두의냉장고 {
+    font-size: 6vw;
+  }
+}
+
 .한사람 {
   margin-top: 1vw;
   /* color: white; */
   font-size: 1.2vw;
 }
 
+@media (max-width: 1000px) {
+  .한사람 {
+    font-size: 2vw;
+  }
+}
+
 .사고 {
   margin-top: 1vw;
   /* color: white; */
   font-size: 1.2vw;
+}
+
+@media (max-width: 1000px) {
+  .사고 {
+    font-size: 2vw;
+  }
 }
 
 .playstore {
@@ -80,6 +115,13 @@
   background-color: white;
   border-radius: 0.5vw;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .playstore {
+    width: 18vw;
+    height: 5vw;
+  }
 }
 
 .playstoreicon {
@@ -98,6 +140,12 @@
 
 .부메랑gif {
   width: 30vw;
+}
+
+@media (max-width: 1000px) {
+  .부메랑gif {
+    width: 40vw;
+  }
 }
 
 .servicesecond {
@@ -124,6 +172,12 @@
   width: 20vw;
 }
 
+@media (max-width: 1000px) {
+  .냉장고미리보기 {
+    width: 23vw;
+  }
+}
+
 .두번째블럭오른쪽 {
   display: flex;
   flex-direction: column;
@@ -136,10 +190,23 @@
   letter-spacing: -0.06em;
 }
 
+@media (max-width: 1000px) {
+  .모바일 {
+    margin-top: 8vw;
+    font-size: 5vw;
+  }
+}
+
 .음식의칼로리 {
   margin-top: 1.2vw;
   /* color: white; */
   font-size: 1.2vw;
+}
+
+@media (max-width: 1000px) {
+  .음식의칼로리 {
+    font-size: 2vw;
+  }
 }
 
 .냉장고바로가기 {
@@ -154,12 +221,26 @@
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .냉장고바로가기 {
+    width: 17vw;
+    height: 5vw;
+  }
+}
+
 .서비스냉장고현황 {
+  white-space: nowrap;
   font-weight: 500;
   margin-left: 0.5vw;
   font-size: 1.1vw;
   color: black;
 }
+
+@media (max-width: 1000px) {
+    .서비스냉장고현황 {
+        font-size: 0.9vw;
+    }
+  }
 
 .서비스냉장고현황뒤로가기 {
   white-space: nowrap;
@@ -168,4 +249,3 @@
   width: 1vw;
   transform: rotate(180deg);
 }
-
