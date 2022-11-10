@@ -27,10 +27,10 @@
 }
 
 @media (max-width: 1000px) {
-    .serviceimg {
-        width: 7vw;
-    }
+  .serviceimg {
+    width: 7vw;
   }
+}
 
 .servicefirst {
   display: flex;
@@ -318,8 +318,26 @@
   } */
 
 .세번째블럭왼쪽 {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.서비스나무flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.서비스나무개수 {
+  font-size: 1.5vw;
+}
+
+@media (max-width: 1000px) {
+  .서비스나무개수 {
+    font-size: 2.5vw;
+  }
 }
 
 .서비스나무 {
@@ -327,10 +345,10 @@
 }
 
 @media (max-width: 1000px) {
-    .서비스나무 {
-      width: 25vw;
-    }
+  .서비스나무 {
+    width: 25vw;
   }
+}
 
 .나무로알아보는 {
   font-size: 4vw;
@@ -339,31 +357,44 @@
 }
 
 @media (max-width: 1000px) {
-    .나무로알아보는{
-      font-size: 6vw;
-    }
+  .나무로알아보는 {
+    font-size: 6vw;
   }
+}
 
 .내가배출한 {
-    margin-top: 1vw;
-    /* color: white; */
-    font-size: 1.2vw;
+  margin-top: 1vw;
+  /* color: white; */
+  font-size: 1.2vw;
 }
 
 @media (max-width: 1000px) {
-    .내가배출한 {
-      font-size: 2vw;
-    }
+  .내가배출한 {
+    font-size: 2vw;
   }
+}
 
-.부메랑은{
-    margin-top: 1vw;
-    /* color: white; */
-    font-size: 1.2vw;
+.부메랑은 {
+  margin-top: 1vw;
+  /* color: white; */
+  font-size: 1.2vw;
 }
 
 @media (max-width: 1000px) {
-    .부메랑은 {
-      font-size: 2vw;
-    }
+  .부메랑은 {
+    font-size: 2vw;
   }
+}
+
+.Math {
+  margin-top: 2vw;
+  font-size: 1vw;
+  color: gray;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  .Math {
+    font-size: 2vw;
+  }
+}

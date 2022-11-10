@@ -53,9 +53,13 @@ export function Service() {
           <span className="나무로알아보는">나무로 알아보는,<br/>탄소량 추측<br/></span>
           <span className="내가배출한">내가 배출한 탄소량이 지구에 얼마나 영향을 주는지 <br/>알고 있으신가요?</span>
           <span className="부메랑은">부메랑은 탄소량을 나무의 개수로 <br/>수치화하여 알려줍니다.</span>
+          <span className="Math">탄소량(g) / 6500</span>
         </div>
         <div className="세번째블럭오른쪽">
+            <div className="서비스나무flex">
         <img className="서비스나무" src="/img/tree.png"></img>
+        <span className="서비스나무개수">0.92 그루</span>
+        </div>
         </div>
     </div>
       </div>
