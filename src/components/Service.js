@@ -46,6 +46,7 @@ export function Service() {
             </div>
         </div>
       </div>
+      <div className="divider"></div>
     </div>
   );
 }
