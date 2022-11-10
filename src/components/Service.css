@@ -33,7 +33,7 @@
   margin-top: 5vw;
   width: 100%;
   height: 50vw;
-  background-color: rgba(146, 226, 134, 0.7);
+  background-color: rgba(49, 165, 30, 0.7);
 }
 
 @media (max-width: 1000px) {
@@ -169,7 +169,7 @@
 }
 
 .냉장고미리보기 {
-  width: 20vw;
+  width: 21vw;
 }
 
 @media (max-width: 1000px) {
