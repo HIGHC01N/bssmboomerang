@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export function CheckFood() {
+
   const [data, setdata] = useState({});
   const { macAddress } = useParams();
 
@@ -29,10 +30,10 @@ export function CheckFood() {
     <div className="App">
       {/* <meta http-equiv={refresh.isRefresh ? "refresh" : "none"} content="0.7"></meta> */}
       <Link to="/Info">
-          <div className="warningposition">
-            <img src="/img/warning.png" className="warning"></img>
-          </div>
-        </Link>
+        <div className="warningposition">
+          <img src="/img/warning.png" className="warning"></img>
+        </div>
+      </Link>
       {data.objectId ? (
         <div className="jpgbox">
           <div>
@@ -65,19 +66,23 @@ export function CheckFood() {
 
             <D carbon={data.carbon} className="carbong">
               {" "}
-              {data.carbon}g<br/>
+              {data.carbon}g<br />
             </D>
-            <span className="calorie">칼로리는<br/></span>
+            <span className="calorie">
+              칼로리는
+              <br />
+            </span>
             <span className="third">{data.calorie}Kcal</span>
           </div>
         </div>
       ) : (
         <div className="containerbox">
-          <div className="back"
-              onClick={() => {
-                navigate("/");
-              }}
-            >
+          <div
+            className="back"
+            onClick={() => {
+              navigate("/");
+            }}
+          >
             <img className="Checkback" src="/img/Vector5.png"></img>
           </div>
           <img src="/img/Vector2.png" className="arrow"></img>

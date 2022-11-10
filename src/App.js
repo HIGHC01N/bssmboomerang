@@ -12,13 +12,19 @@ import { Weathermenu } from "./components/Weathermenu";
 import { Info } from "./components/Info";
 import { NotFound } from "./components/NotFound";
 import { Camera } from "./components/Camera";
+import { My } from "./components/My";
+import { Guide } from "./components/Guide";
+import { Service } from "./components/Service";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route exact path="Service" element={<Service/>}/>
+          <Route exact path="/Guide" element={<Guide/>}/>
           <Route exact path="/Ref" element={<Ref />} />
+          <Route exact path="/My" element={<My />} />
           <Route exact path="/Weathermenu" element={<Weathermenu />} />
           <Route exact path="/" element={<Main />} />
           <Route exact path="/Info" element={<Info />} />
