@@ -26,6 +26,12 @@
   width: 4vw;
 }
 
+@media (max-width: 1000px) {
+    .serviceimg {
+        width: 7vw;
+    }
+  }
+
 .servicefirst {
   display: flex;
   justify-content: center;
