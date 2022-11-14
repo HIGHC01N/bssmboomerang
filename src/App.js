@@ -14,15 +14,12 @@ import { NotFound } from "./components/NotFound";
 import { Camera } from "./components/Camera";
 import { Guide } from "./components/Guide";
 import { Service } from "./components/Service";
-import { NewsPage } from "./components/NewsPage";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/News" element={<NewsPage />} />
-          <Route path=":category" element={<NewsPage />} />
           <Route exact path="Service" element={<Service />} />
           <Route exact path="/Guide" element={<Guide />} />
           <Route exact path="/Ref" element={<Ref />} />
