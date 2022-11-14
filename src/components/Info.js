@@ -24,7 +24,7 @@ export function Info() {
           <Link to="/Guide" style={{ textDecoration: "none" }}>
             <span className="NavText">가이드</span>
           </Link>
-          <Link to="/News" style={{ textDecoration: "none" }}>
+          <Link to="/news" style={{ textDecoration: "none" }}>
             <span className="NavText">환경뉴스</span>
           </Link>
         </div>

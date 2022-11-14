@@ -38,6 +38,7 @@ export const Ref = () => {
     return totalcalorie;
   };
 
+
   const addtree = () => {
     let totaltree = 0;
     list.map((food) => (totaltree += (food.amount * food.carbon) / 6500));
@@ -196,3 +197,4 @@ const GrayLine = styled.hr`
   height: 40px;
   background-color: grey;
 `;
+

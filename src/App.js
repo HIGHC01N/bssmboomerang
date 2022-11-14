@@ -14,7 +14,8 @@ import { NotFound } from "./components/NotFound";
 import { Camera } from "./components/Camera";
 import { Guide } from "./components/Guide";
 import { Service } from "./components/Service";
-import { News } from "./components/News"
+import { News } from "./components/News";
+import { NewsPage } from "./components/NewsPage";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route exact path="Service" element={<Service />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/:category" element={<NewsPage />} />
           <Route exact path="/Guide" element={<Guide />} />
           <Route exact path="/News" element={<News />} />
           <Route exact path="/Ref" element={<Ref />} />
