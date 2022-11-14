@@ -14,8 +14,11 @@ import { NotFound } from "./components/NotFound";
 import { Camera } from "./components/Camera";
 import { Guide } from "./components/Guide";
 import { Service } from "./components/Service";
+<<<<<<< HEAD
 import { News } from "./components/News";
 import { NewsPage } from "./components/NewsPage";
+=======
+>>>>>>> parent of 6842033 (뉴스페이지)
 
 function App() {
   return (
@@ -26,7 +29,6 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/:category" element={<NewsPage />} />
           <Route exact path="/Guide" element={<Guide />} />
-          <Route exact path="/News" element={<News />} />
           <Route exact path="/Ref" element={<Ref />} />
           <Route exact path="/Weathermenu" element={<Weathermenu />} />
           <Route exact path="/" element={<Main />} />
