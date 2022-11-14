@@ -154,7 +154,7 @@ export const Ref = () => {
         <div className="EmptyCenter">
           <div className="EmptyBody">
             <div className="emptyposition">
-              <img src="/img/empty.png" className="emptyimg"></img>
+              <img src="/img/boomerangloading.gif" className="emptyimg"></img>
             </div>
             <span className="emptytext">냉장고가 텅 비어 있어요</span>
           </div>
