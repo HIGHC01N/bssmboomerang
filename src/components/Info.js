@@ -24,12 +24,9 @@ export function Info() {
           <Link to="/Guide" style={{ textDecoration: "none" }}>
             <span className="NavText">가이드</span>
           </Link>
-<<<<<<< HEAD
           <Link to="/news" style={{ textDecoration: "none" }}>
             <span className="NavText">환경뉴스</span>
           </Link>
-=======
->>>>>>> parent of 6842033 (뉴스페이지)
         </div>
       </header>
       <div className="InfoBody">
