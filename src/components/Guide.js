@@ -1,9 +1,8 @@
-import "./Guide.css";
 
 export function Guide () {
     return (
         <div>
-            <img className="GuideImg" src="/img/recognize.gif"></img>
+        가이드페이지
         </div>
     );
 }
