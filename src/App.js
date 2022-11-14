@@ -14,6 +14,7 @@ import { NotFound } from "./components/NotFound";
 import { Camera } from "./components/Camera";
 import { Guide } from "./components/Guide";
 import { Service } from "./components/Service";
+import { News } from "./components/News"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route exact path="Service" element={<Service />} />
           <Route exact path="/Guide" element={<Guide />} />
+          <Route exact path="/News" element={<News />} />
           <Route exact path="/Ref" element={<Ref />} />
           <Route exact path="/Weathermenu" element={<Weathermenu />} />
           <Route exact path="/" element={<Main />} />

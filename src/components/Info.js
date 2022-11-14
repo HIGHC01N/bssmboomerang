@@ -24,6 +24,9 @@ export function Info() {
           <Link to="/Guide" style={{ textDecoration: "none" }}>
             <span className="NavText">가이드</span>
           </Link>
+          <Link to="/News" style={{ textDecoration: "none" }}>
+            <span className="NavText">환경뉴스</span>
+          </Link>
         </div>
       </header>
       <div className="InfoBody">
@@ -39,6 +42,7 @@ export function Info() {
             <span className="탄소">탄소</span>
             <span className="가있습니다">가 있습니다.</span>
             <div className="탄소소개밑">
+              <Link to ="/News" style={{ textDecoration: "none" }}>
               <div className="탄소소개밑왼쪽">
                 <span className="환경뉴스보기">
                   환경뉴스
@@ -48,6 +52,7 @@ export function Info() {
                   <img className="인포화살표" src="/img/InfoBack.png"></img>
                 </div>
               </div>
+              </Link>
               <Link to="/" style={{ textDecoration: "none" }}>
                 <div className="탄소소개밑오른쪽">
                   <span className="홈으로">홈 으로</span>
