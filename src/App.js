@@ -28,7 +28,7 @@ function App() {
           <Route exact path="/Info" element={<Info />} />
           <Route exact path="/Camera" element={<Camera />} />
           <Route exact path="*" element={<NotFound />} />
-          <Route path="/mac/:macAddress" element={<CheckFood />}></Route>
+          <Route path="/mac/:macAddress" element={<CheckFood />}/>
         </Routes>
       </BrowserRouter>
     </div>
