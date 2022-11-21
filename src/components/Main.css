@@ -58,7 +58,7 @@
 }
 
 .mainnotice {
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3.3rem;
@@ -86,7 +86,7 @@
   position: absolute;
   color: #6487ad;
 
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -112,10 +112,10 @@
 
   color: rgba(0, 0, 0, 0.5); */
 
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 3vw;
+  font-weight: 550;
+  font-size: 2.5vw;
   line-height: 3vw;
   text-align: center;
   letter-spacing: -0.09em;
@@ -142,7 +142,7 @@
   text-align: center;
   letter-spacing: -0.06em; */
 
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 10vw;
@@ -157,7 +157,7 @@
 .erang {
   margin-left: 17vw;
   margin-top: -5vw;
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3vw;
@@ -187,7 +187,7 @@
   /* text-align: center;
   letter-spacing: -0.06em; */
 
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 5vw;
@@ -201,7 +201,7 @@
 }
 
 .service {
-  font-family: "Inter";
+  font-family: 'Nanum Gothic', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 6vw;
