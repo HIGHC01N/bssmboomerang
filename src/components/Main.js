@@ -57,6 +57,7 @@ export const Main = () => {
       </div>
       <div className="maincenter">
       <div className="container">
+      <div className="mainmove">
         <Link to="/mac/5c:cf:7f:d1:a1:47:" style={{ textDecoration: "none" }}>
           <motion.div
             className="음식인식box"
@@ -67,6 +68,18 @@ export const Main = () => {
             <p className="text">음식 인식</p>
           </motion.div>
         </Link>
+       <a href="https://www.youtube.com/"  style={{ textDecoration: "none" }}>
+          <motion.div
+            className="유튜브box"
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <img src="/img/youtubeicon.png" className="img"></img>
+            <p className="text">유튜브</p>
+          </motion.div>
+          </a>
+        </div>
+        
 
         <Link to="/Ref" style={{ textDecoration: "none" }}>
           <motion.div
