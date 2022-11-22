@@ -1,6 +1,14 @@
 .MainBody {
-  background: linear-gradient(112.37deg, #d5daf8 41.64%, #b1dfff 76.25%);
+  background-size: cover;
   height: 100vh;
+  width: 100%;
+  background: linear-gradient(112.37deg, #D5DAF8 41.64%, #B1DFFF 76.25%);
+}
+
+.maincenter {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .welcomebox {
@@ -41,6 +49,8 @@
 }
 
 .container {
+  position: absolute;
+  top: 27vw;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -115,12 +125,12 @@
 }
 
 .clock {
+  bottom: 3vw;
+  position: absolute;
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 50vw;
   font-size: 3vw;
-  position: absolute;
   color: #6487ad;
 
   font-family: "Nanum Gothic", sans-serif;
@@ -132,8 +142,37 @@
 .box {
   width: 15vw;
   height: 15vw;
-  margin: 1vw;
-  margin-bottom: 20%;
+  margin: 2vw;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+
+  /* font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4vw;
+  line-height: 3vw;
+  text-align: center;
+  letter-spacing: -0.09em;
+
+  color: rgba(0, 0, 0, 0.5); */
+
+  font-family: "Nanum Gothic", sans-serif;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  text-align: center;
+  letter-spacing: -0.09em;
+
+  color: #232f59;
+}
+
+.음식인식box{
+  width: 15vw;
+  height: 15vw;
+  margin: 2vw;
 
   background: #ffffff;
   box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
@@ -168,8 +207,11 @@
 }
 
 .boom {
-  margin-top: 5%;
-  margin-bottom: -6%;
+  position: absolute;
+  top: 4vw;
+
+  /* margin-top: 5%;
+  margin-bottom: -6%; */
 
   /* font-family: "Inter";
   font-style: normal;
@@ -192,8 +234,11 @@
 }
 
 .erang {
-  margin-left: 17vw;
-  margin-top: -5vw;
+  top: 3.5vw;
+  margin-left: 17.5vw;
+  position: absolute;
+  /* margin-left: 17vw;
+  margin-top: -5vw; */
   font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -205,14 +250,17 @@
 }
 
 .boomerang_logo {
+  position: absolute;
+
+  top: 4.5vw;
+  margin-left: 15vw;
   width: 8%;
   align-items: center;
-  margin-top: -3vw;
-  margin-left: 28vw;
 }
 
 .use {
-  margin-bottom: -2%;
+  position: absolute;
+  top: 12vw;
   /* 
   font-family: "Inter";
   font-style: normal;
@@ -238,7 +286,9 @@
 }
 
 .service {
-  margin-bottom: 3vw;
+  position: absolute;
+  top: 20vw;
+
   font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -284,15 +334,33 @@
     flex-direction: column;
     justify-content: center;
     margin: 28%;
-    margin-bottom: 5%;
-    margin-top: 5%;
+    top: 20vw;
   }
 }
 
 @media (max-width: 1000px) {
   .box {
     width: 40vw;
-    height: 40vw;
+    height: 35vw;
+    font-size: 8vw;
+    line-height: 7vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .음식인식box {
+    width: 40vw;
+    height: 35vw;
+    font-size: 8vw;
+    line-height: 7vw;
+  }
+}
+
+@media (min-height: 850px) {
+  .음식인식box {
+    display: none;
+    width: 40vw;
+    height: 35vw;
     font-size: 8vw;
     line-height: 7vw;
   }
@@ -300,7 +368,8 @@
 
 @media (max-width: 1000px) {
   .boom {
-    margin-top: 10%;
+    top: 7vw;
+    font-size: 18vw;
   }
 }
 
@@ -311,16 +380,10 @@
   }
 }
 
-@media (max-width: 1000px) {
-  .boom {
-    font-size: 18vw;
-    line-height: 20vw;
-  }
-}
 
 @media (max-width: 1000px) {
   .use {
-    margin-top: 5vw;
+    top: 23vw;
     font-size: 10vw;
     line-height: 10vw;
   }
@@ -328,7 +391,7 @@
 
 @media (max-width: 1000px) {
   .service {
-    margin-top: 2vw;
+    top: 33vw;
     font-size: 10vw;
     line-height: 10vw;
   }
@@ -337,7 +400,6 @@
 @media (max-width: 1000px) {
   .clock {
     font-size: 5vw;
-    margin-top: 210vw;
   }
 }
 
@@ -354,8 +416,7 @@
 
 @media (max-width: 1000px) {
   .erang {
-    margin-top: -13vw;
-    margin-left: 33vw;
+    margin-left: 35vw;
     font-size: 4vw;
   }
 }
@@ -368,14 +429,13 @@
 
 @media (max-width: 1000px) {
   .boomerang_logo {
-    margin-top: -1vw;
-    margin-left: 50vw;
+    margin-left: 25vw;
     width: 12%;
   }
 }
 
 @media (max-width: 1000px) {
   .MainBody {
-    height: max-content;
+    height: 100vh;
   }
 }

@@ -16,6 +16,7 @@ export const Main = () => {
 
   return (
     <div className="MainBody">
+      {/* <img className="MainBody" src="/img/backgroundcolor.png"></img> */}
       <div className="clock">
         <span className="clockcenter">{time.toLocaleTimeString()}</span>
       </div>
@@ -54,10 +55,11 @@ export const Main = () => {
         <span className="use">Choose Your</span>
         <span className="service">Using Service</span>
       </div>
+      <div className="maincenter">
       <div className="container">
         <Link to="/mac/5c:cf:7f:d1:a1:47:" style={{ textDecoration: "none" }}>
           <motion.div
-            className="box"
+            className="음식인식box"
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
@@ -87,6 +89,7 @@ export const Main = () => {
             <p className="text">날씨</p>
           </motion.div>
         </Link>
+      </div>
       </div>
       <footer>
         {/* <div className="doc"></div>
