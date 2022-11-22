@@ -161,7 +161,7 @@
 .box {
   width: 15vw;
   height: 15vw;
-  margin: 2vw;
+  margin: 1vw;
 
   background: #ffffff;
   box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
@@ -191,7 +191,7 @@
 .음식인식box{
   width: 15vw;
   height: 15vw;
-  margin: 2vw;
+  margin: 1vw;
 
   background: #ffffff;
   box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
@@ -224,7 +224,7 @@
 
 @media (max-width: 1000px) {
   .유튜브box {
-    margin: 2vw;
+    margin: 1vw;
   
     background: #ffffff;
     box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
@@ -248,7 +248,7 @@
   
     color: #232f59;
 
-    width: 40vw;
+    width: 35vw;
     height: 35vw;
     font-size: 8vw;
     line-height: 7vw;
@@ -398,7 +398,7 @@
 
 @media (max-width: 1000px) {
   .box {
-    width: 40vw;
+    width: 35vw;
     height: 35vw;
     font-size: 8vw;
     line-height: 7vw;
@@ -407,7 +407,7 @@
 
 @media (max-width: 1000px) {
   .음식인식box {
-    width: 40vw;
+    width: 35vw;
     height: 35vw;
     font-size: 8vw;
     line-height: 7vw;
@@ -482,7 +482,7 @@
 
 @media (max-width: 1000px) {
   .text {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
