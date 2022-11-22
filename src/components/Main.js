@@ -16,7 +16,9 @@ export const Main = () => {
 
   return (
     <div className="MainBody">
+      <div className="snowcenter">
       <img className="mainsnow" src="/img/snow3.gif"></img>
+      </div>
       <div className="clock">
         <span className="clockcenter">{time.toLocaleTimeString()}</span>
       </div>
