@@ -349,15 +349,6 @@
 
 @media (max-width: 1000px) {
   .음식인식box {
-    width: 40vw;
-    height: 35vw;
-    font-size: 8vw;
-    line-height: 7vw;
-  }
-}
-
-@media (min-height: 850px) {
-  .음식인식box {
     display: none;
     width: 40vw;
     height: 35vw;
@@ -365,6 +356,7 @@
     line-height: 7vw;
   }
 }
+
 
 @media (max-width: 1000px) {
   .boom {
@@ -429,7 +421,7 @@
 
 @media (max-width: 1000px) {
   .boomerang_logo {
-    margin-left: 25vw;
+    right: 18vw;
     width: 12%;
   }
 }
