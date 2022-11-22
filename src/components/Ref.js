@@ -118,7 +118,9 @@ export const Ref = () => {
             </div>
           </div>
         </div>
+        <div className="firstlinecenter">
         <div className="firstline"></div>
+        </div>
       </>
     );
   });
@@ -141,7 +143,9 @@ export const Ref = () => {
         </div>
         <h1 className="제목">Bommerang List</h1>
       </div>
+      <div className="firstlinecenter">
       <div className="firstline"></div>
+      </div>
       <div className="carbon-container">
         <p className="제품사진 carbon-element">제품사진</p>
         <p className="품명 carbon-element">품명</p>
@@ -150,7 +154,9 @@ export const Ref = () => {
         <p className="탄소컬러 carbon-element">나무</p>
         <p className="개수 carbon-element">개수</p>
       </div>
+      <div className="firstlinecenter">
       <div className="firstline"></div>
+      </div>
       {!list.length ? (
         <div className="EmptyCenter">
           <div className="EmptyBody">

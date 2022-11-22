@@ -27,7 +27,9 @@
 
 .제목 {
   font-family: "Nanum Gothic", sans-serif;
+  font-weight: 100;
   font-size: 5vw;
+  letter-spacing: -0.07em;
   text-align: center;
   color: #054086;
   margin: 0;
@@ -35,7 +37,7 @@
 }
 
 .제품사진 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -57,7 +59,7 @@
 }
 
 .품명 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -73,7 +75,7 @@
 }
 
 .탄소량 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -83,7 +85,7 @@
 }
 
 .칼로리 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -92,7 +94,7 @@
 }
 
 .탄소컬러 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -102,7 +104,7 @@
 }
 
 .개수 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -110,10 +112,16 @@
   color: #000000;
 }
 
-.firstline {
+.firstlinecenter {
+  display: flex;
   width: 100%;
+  justify-content: center;
+}
 
-  border: 5px solid rgba(204, 204, 204, 0.3);
+.firstline {
+  width: 95%;
+
+  border: 1px solid rgba(204, 204, 204, 0.3);
 }
 
 @media (max-width: 800px) {
@@ -135,10 +143,10 @@
 
 .food {
   white-space: nowrap;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 350;
-  font-size: 5vw;
+  font-size: 3vw;
   text-align: center;
   letter-spacing: -0.09em;
   margin: 0 auto;
@@ -162,7 +170,7 @@
 }
 
 .carbon {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 3vw;
@@ -173,7 +181,7 @@
 }
 
 .kalorie {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 3vw;
@@ -196,7 +204,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #555555;
+  background-color: #6487AD;
   width: 3vw;
   height: 3vw;
   cursor: pointer;
@@ -208,13 +216,14 @@
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: #555555;
+  background-color: #6487AD;
   width: 3vw;
   height: 3vw;
   cursor: pointer;
 }
 
 .countnumber {
+  font-family: "Nanum Gothic", sans-serif;
   margin: 1.5vw;
   font-size: 2vw;
 }
@@ -238,7 +247,7 @@
   justify-content: center;
   align-items: center;
 
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 4vw;
@@ -278,7 +287,7 @@
   width: 15vw;
   align-items: center;
   text-align: center;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.5vw;
@@ -319,6 +328,7 @@
 }
 
 .deletebox {
+  font-family: "Nanum Gothic", sans-serif;
   display: flex;
   color: white;
   text-align: center;
@@ -394,6 +404,7 @@
 
 .treetext {
   font-size: 1vw;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 @media (max-width: 1000px) {
