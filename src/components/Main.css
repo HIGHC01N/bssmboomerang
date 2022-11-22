@@ -5,6 +5,12 @@
   background: linear-gradient(112.37deg, #D5DAF8 41.64%, #B1DFFF 76.25%);
 }
 
+.mainsnow {
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
 .maincenter {
   display: flex;
   width: 100%;

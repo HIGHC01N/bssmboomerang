@@ -139,7 +139,7 @@ export const Ref = () => {
             </div>
           </Link>
         </div>
-        <h1 className="제목">부메랑 인벤토리</h1>
+        <h1 className="제목">Bommerang List</h1>
       </div>
       <div className="firstline"></div>
       <div className="carbon-container">
