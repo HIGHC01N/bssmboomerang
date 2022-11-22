@@ -3,6 +3,43 @@
   height: 100vh;
 }
 
+.welcomebox {
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .welcomebox {
+    display: none;
+  }
+}
+
+.welcome {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 2.5vw;
+  text-align: left;
+  letter-spacing: -0.09em;
+
+  color: #757ea0;
+}
+
+.boomerangref {
+  margin-top: -1rem;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 3vw;
+  text-align: left;
+  letter-spacing: -0.09em;
+
+  color: #5d6589;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -32,7 +69,7 @@
 }
 
 @media (max-width: 1000px) {
-  .mainwarningposition{
+  .mainwarningposition {
     width: 15vw;
     height: 15vw;
   }
@@ -58,7 +95,7 @@
 }
 
 .mainnotice {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3.3rem;
@@ -68,7 +105,7 @@
 }
 
 @media (max-width: 1000px) {
-  .mainnotice{
+  .mainnotice {
     display: none;
   }
 }
@@ -86,16 +123,16 @@
   position: absolute;
   color: #6487ad;
 
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   text-align: center;
 }
 
 .box {
-  width: 18vw;
-  height: 18vw;
-  margin: 2vw;
+  width: 15vw;
+  height: 15vw;
+  margin: 1vw;
   margin-bottom: 20%;
 
   background: #ffffff;
@@ -112,7 +149,7 @@
 
   color: rgba(0, 0, 0, 0.5); */
 
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 550;
   font-size: 2.5vw;
@@ -131,7 +168,7 @@
 }
 
 .boom {
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: -6%;
 
   /* font-family: "Inter";
@@ -142,7 +179,7 @@
   text-align: center;
   letter-spacing: -0.06em; */
 
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 10vw;
@@ -157,7 +194,7 @@
 .erang {
   margin-left: 17vw;
   margin-top: -5vw;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3vw;
@@ -187,7 +224,7 @@
   /* text-align: center;
   letter-spacing: -0.06em; */
 
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 5vw;
@@ -201,7 +238,8 @@
 }
 
 .service {
-  font-family: 'Nanum Gothic', sans-serif;
+  margin-bottom: 3vw;
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 6vw;
@@ -238,7 +276,7 @@
 }
 
 .text {
-  margin-top: 12%;
+  margin-top: 3%;
 }
 
 @media (max-width: 1000px) {

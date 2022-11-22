@@ -18,6 +18,10 @@ export const Main = () => {
       <div className="clock">
         <span className="clockcenter">{time.toLocaleTimeString()}</span>
       </div>
+      <div className="welcomebox">
+        <span className="welcome">Welcome to<br/></span>
+        <span className="boomerangref">Boomerang refrigerator</span>
+      </div>
       <Link to="/Info" style={{ textDecoration: "none" }}>
         <div className="mainwarningposition">
           <div className="mainwartext">
