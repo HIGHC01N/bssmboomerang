@@ -196,7 +196,14 @@
 }
 
 .datajpg {
-  padding-bottom: 3%;
+  border-radius: 10px;
+  margin-bottom: 1vw;
+}
+
+@media (max-width: 1000px) {
+  .datajpg {
+    margin-bottom: 5vw;
+  }
 }
 
 .data {
@@ -233,7 +240,7 @@
 }
 
 .info {
-  padding-top: 14%;
+  padding-top: 10%;
   line-height: 7vw;
   display: inline;
   flex-direction: column;
