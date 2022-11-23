@@ -4,7 +4,7 @@
   height: 100vh;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .반응형 {
     position: relative;
     border: 0.3vw solid rgba(204, 204, 204, 0.3);
@@ -17,7 +17,7 @@
   left: 1vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .backref {
     top: 1vw;
   }
@@ -28,7 +28,7 @@
   height: 4vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .backimg {
     width: 5vw;
     height: 5vw;
@@ -52,7 +52,7 @@
   z-index: -1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .제목 {
     display: none;
   }
@@ -75,7 +75,7 @@
   z-index: -1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .반응형제목 {
     display: flex;
   }
@@ -132,10 +132,11 @@
   align-items: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .carbon-container {
     border-radius: 5px;
     padding: 0;
+    height: 15vw;
   }
 }
 
@@ -202,12 +203,12 @@
 .firstline {
   width: 97%;
 
-  border: 1px solid #a2bcdb;
+  border-bottom: 1px solid #a2bcdb;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .firstline {
-    width: 97%%;
+    width: 97%;
   }
 }
 
@@ -218,11 +219,17 @@
   width: 40%;
 }
 
+@media (max-width: 1000px) {
+  .REFimg {
+    width: 60%;
+  }
+}
+
 .foodbox {
 }
 
 .food {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 350;
@@ -233,13 +240,19 @@
   color: black;
 }
 
+@media (max-width: 1000px) {
+  .food {
+    font-size: 5vw;
+  }
+}
+
 .line {
   width: 100%;
 
   border: 5px solid rgba(204, 204, 204, 0.3);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .line {
     width: 100%;
     border: 0.3vw solid rgba(204, 204, 204, 0.3);
@@ -260,6 +273,12 @@
   color: #cccccc;
 }
 
+@media (max-width: 1000px) {
+  .carbon {
+    font-size: 4vw;
+  }
+}
+
 .kalorie {
   font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
@@ -268,6 +287,12 @@
   text-align: center;
   letter-spacing: -0.06em;
   color: #cccccc;
+}
+
+@media (max-width: 1000px) {
+  .kalorie {
+    font-size: 4vw;
+  }
 }
 
 .count {
@@ -306,6 +331,12 @@
   font-family: "Nanum Gothic", sans-serif;
   margin: 1.5vw;
   font-size: 2vw;
+}
+
+@media (max-width: 1000px) {
+  .countnumber {
+    font-size: 3vw;
+  }
 }
 
 /* .colorbox {
@@ -495,7 +526,7 @@
   }
 }
 
-/* @media (max-width: 800px) {
+/* @media (max-width: 1000px) {
   .warningpositionInInfo {
     margin-top: 9vw;
   }
@@ -551,7 +582,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .emptyposition {
     margin-top: 0vw;
   }
@@ -574,7 +605,7 @@
 
 @media (max-width: 1000px) {
   .tree {
-    width: 4.5vw;
+    width: 6.6vw;
   }
 }
 
@@ -592,15 +623,15 @@
 
 @media (max-width: 1000px) {
   .minus {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 5.5vw;
+    height: 5.5vw;
   }
 }
 
 @media (max-width: 1000px) {
   .plus {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 5.5vw;
+    height: 5.5vw;
   }
 }
 

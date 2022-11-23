@@ -30,7 +30,7 @@
   left: 1vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .back {
   }
 }
@@ -48,7 +48,7 @@
   max-height: 5vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .Checkback {
     margin-top: 2%;
     max-width: 40%;
@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .arrow {
     top: 10vw;
     max-width: 100%;
@@ -85,7 +85,7 @@
   color: rgba(49, 165, 30, 0.7);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .start {
     margin-top: -8%;
     width: 60vw;
@@ -111,7 +111,7 @@
   color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .intro {
     font-size: 5vw;
     top: 100vw;
@@ -143,7 +143,7 @@
   width: 20%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .marketimg {
     width: 60%;
   }
@@ -158,7 +158,7 @@
   color: #ffffff;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .basket {
     display: none;
   }
@@ -172,7 +172,7 @@
   width: 80%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .market {
     border-radius: 30px;
     width: 15vw;
@@ -278,14 +278,14 @@
   color: white;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .jpgbox {
     flex-direction: column;
     justify-content: space-around;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .jpg {
     margin-left: 15%;
     padding-top: 20%;
@@ -293,50 +293,50 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .data {
     font-size: 12vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .가 {
     font-size: 7vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .recognize {
     font-size: 7vw;
     line-height: 12vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .first {
     font-size: 10vw;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .second {
     font-size: 6vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .carbong {
     font-size: 10vw;
     line-height: 10vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .calorie {
     font-size: 8vw;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .third {
     font-size: 6vw;
   }
