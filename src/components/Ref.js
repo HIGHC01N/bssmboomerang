@@ -126,13 +126,13 @@ export const Ref = () => {
   });
 
   return (
-    <div>
-      <Link to="/Info">
+    <div className="refbody">
+      {/* <Link to="/Info">
         <div className="warningpositionInInfo">
           <img src="/img/warning.png" className="warning"></img>
         </div>
-      </Link>
-      <div className="반응형"></div>
+      </Link> */}
+      {/* <div className="반응형"></div> */}
       <div style={{ position: "relative" }}>
         <div className="backref">
           <Link to="/">
@@ -141,7 +141,10 @@ export const Ref = () => {
             </div>
           </Link>
         </div>
-        <h1 className="제목">Bommerang List</h1>
+        <h1 className="제목">Boom List</h1>
+        <h1 className="반응형제목">Boomerang List</h1>
+        <span className="referang">erang</span>
+        <img className="ref_logo" src="/img/boomerang_logo.png"></img>
       </div>
       <div className="firstlinecenter">
       <div className="firstline"></div>

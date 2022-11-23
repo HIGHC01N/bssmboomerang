@@ -25,13 +25,13 @@
 
 .back {
   cursor: pointer;
-  margin-left: -92%;
-  margin-top: 2%;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
 }
 
 @media (max-width: 800px) {
   .back {
-    margin-left: -76%;
   }
 }
 
