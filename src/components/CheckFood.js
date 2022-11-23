@@ -85,7 +85,7 @@ export function CheckFood() {
               navigate("/");
             }}
           >
-            <img className="Checkback" src="/img/Vector5.png"></img>
+            <img className="Checkback" src="/img/whiteback_arrow.png"></img>
           </div>
           <img src="/img/white_arrow.gif" className="arrow"></img>
           {/* <div className="start">시작하기</div> */}
