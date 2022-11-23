@@ -200,33 +200,36 @@
 }
 
 .data {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   text-align: center;
   font-size: 5vw;
   line-height: 8vw;
   letter-spacing: -0.06em;
+  color: white;
 }
 
 .가 {
+  font-family: "Nanum Gothic", sans-serif;
   margin-left: 1vw;
-  font-family: "Inter";
   font-style: normal;
   font-weight: 800;
   text-align: center;
   font-size: 2vw;
   letter-spacing: -0.06em;
+  color: white;
 }
 
 .recognize {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   text-align: center;
   font-size: 2vw;
   line-height: 1vw;
   letter-spacing: -0.06em;
+  color: white;
 }
 
 .info {
@@ -249,18 +252,30 @@
 }
 
 .first {
+  font-family: "Nanum Gothic", sans-serif;
   font-size: 8vw;
+  color: white;
 }
 
 .second {
+  font-family: "Nanum Gothic", sans-serif;
   font-size: 5vw;
   margin-left: 1vw;
+  color: white;
 }
 
 .third {
+  font-family: "Nanum Gothic", sans-serif;
   line-height: 8vw;
   margin: 0;
   font-size: 7vw;
+  color: white;
+}
+
+.calorie {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 8vw;
+  color: white;
 }
 
 @media (max-width: 800px) {
