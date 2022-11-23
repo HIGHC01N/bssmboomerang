@@ -172,6 +172,7 @@
 }
 
 .환경뉴스보기 {
+  white-space: nowrap;
   margin-left: 1vw;
   font-family: "Inter";
   font-style: normal;
@@ -215,6 +216,7 @@
 }
 
 .홈으로 {
+  white-space: nowrap;
   margin-left: 1vw;
   font-family: "Inter";
   font-style: normal;

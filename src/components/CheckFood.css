@@ -1,5 +1,10 @@
-.Checkdiv{
-  background: linear-gradient(180deg, #111B4C 16.62%, #464194 59.41%, #4D62BB 86.62%);
+.Checkdiv {
+  background: linear-gradient(
+    180deg,
+    #111b4c 16.62%,
+    #464194 59.41%,
+    #4d62bb 86.62%
+  );
   width: 100%;
   height: 100vh;
 }
@@ -19,6 +24,7 @@
 }
 
 .back {
+  cursor: pointer;
   margin-left: -92%;
   margin-top: 2%;
 }
@@ -31,7 +37,7 @@
 
 .arrow {
   position: absolute;
-  top:5vw;
+  top: 5vw;
   width: 20%;
 }
 
@@ -52,7 +58,7 @@
 
 @media (max-width: 800px) {
   .arrow {
-    margin-top: -5%;
+    top: 10vw;
     max-width: 100%;
     max-height: 100%;
   }
@@ -113,6 +119,8 @@
 }
 
 .market {
+  cursor: pointer;
+
   position: fixed;
   box-shadow: 0px 0px 15px #636da2;
 
@@ -177,6 +185,14 @@
   flex-direction: column;
   padding-top: 20%;
   width: 30vw;
+}
+
+.jpgdiv {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vw;
+  background-color: white;
 }
 
 .datajpg {
