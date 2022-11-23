@@ -5,6 +5,7 @@ import { useLocation, useNavigate, useParams } from "react-router-dom";
 import "./CheckFood.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Typewriter from "typewriter-effect";
 
 export function CheckFood() {
 
@@ -27,13 +28,14 @@ export function CheckFood() {
   }, [data]);
 
   return (
-    <div className="App">
+    <div className="Checkdiv">
+       <img className="star" src="/img/starback.gif"></img>
       {/* <meta http-equiv={refresh.isRefresh ? "refresh" : "none"} content="0.7"></meta> */}
-      <Link to="/Info">
+      {/* <Link to="/Info">
         <div className="warningposition">
           <img src="/img/warning.png" className="warning"></img>
         </div>
-      </Link>
+      </Link> */}
       {data.objectId ? (
         <div className="jpgbox">
           <div>
@@ -85,9 +87,17 @@ export function CheckFood() {
           >
             <img className="Checkback" src="/img/Vector5.png"></img>
           </div>
-          <img src="/img/Vector2.png" className="arrow"></img>
-          <div className="start">시작하기</div>
-          <p className="intro">위 카메라에 물체를 인식시켜주세요.</p>
+          <img src="/img/white_arrow.gif" className="arrow"></img>
+          {/* <div className="start">시작하기</div> */}
+          <p className="intro">
+          <Typewriter
+            options={{
+              strings: ["Recognize objects with the above camera.", "위의 카메라로 물체를 인식합니다."],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+          </p>
 
           <div
             className="market"
@@ -95,7 +105,10 @@ export function CheckFood() {
               navigate("/Ref");
             }}
           >
+            <div className="basketspace">
+            <span className="basket">Basket</span>
             <img src="/img/white_market.png" className="marketimg"></img>
+            </div>
           </div>
         </div>
       )}
