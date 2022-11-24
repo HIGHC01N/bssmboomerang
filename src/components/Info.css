@@ -10,7 +10,6 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
-
 .InfoNav {
   display: flex;
   justify-content: space-evenly;
@@ -24,7 +23,7 @@
 .InfoText {
   margin-left: 2vw;
 
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -40,7 +39,7 @@
 }
 
 .NavText {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -76,7 +75,7 @@
 .당신이먹는음식에는 {
   margin-left: 0.5rem;
   display: block;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 2vw;
@@ -91,7 +90,7 @@
 .환경을오염시키는 {
   margin-left: 0.3rem;
   display: block;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -104,7 +103,7 @@
 }
 
 .탄소 {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 5vw;
@@ -114,7 +113,7 @@
 }
 
 .가있습니다 {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -127,7 +126,7 @@
 }
 
 .소개 {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -176,7 +175,7 @@
 .환경뉴스보기 {
   white-space: nowrap;
   margin-left: 1vw;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 1.5vw;
@@ -220,7 +219,7 @@
 .홈으로 {
   white-space: nowrap;
   margin-left: 1vw;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 1.5vw;
@@ -257,7 +256,7 @@
 
 .인포탄소컬러 {
   font-size: 2vw;
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 100;
   text-align: center;
@@ -272,7 +271,7 @@
 }
 
 .신호등소개글 {
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: "IBM Plex Sans KR", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1vw;
