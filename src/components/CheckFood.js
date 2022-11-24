@@ -118,8 +118,8 @@ export function CheckFood() {
 
 const D = styled.span`
   color: ${({ carbon }) => {
-    if (carbon >= 180) return "red";
-    else if (carbon >= 160) return "blue";
-    else return "green";
+    if (carbon >= 200) return "#ff3b30";
+    else if (carbon >= 150) return "#ffc041";
+    else return "#4cd964";
   }};
 `;
