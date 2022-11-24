@@ -64,10 +64,10 @@ export function Info() {
             </div>
           </div>
           <div className="InfoRight">
-            <span className="소개">
+            {/* <span className="소개">
               Introduce
               <br />
-            </span>
+            </span> */}
             <div className="소개박스">
               <div className="인포탄소컬러">탄소컬러</div>
               <div className="신호등">

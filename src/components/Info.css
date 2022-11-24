@@ -23,7 +23,7 @@
 .InfoText {
   margin-left: 2vw;
 
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -39,7 +39,7 @@
 }
 
 .NavText {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 2vw;
@@ -72,14 +72,14 @@
   filter: drop-shadow(2px 5px 4px black);
 }
 
-
 .당신이먹는음식에는 {
+  margin-left: 0.5rem;
   display: block;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 2vw;
-  line-height: 2vw;
+  line-height: 3vw;
   /* identical to box height */
 
   letter-spacing: -0.05em;
@@ -88,8 +88,9 @@
 }
 
 .환경을오염시키는 {
+  margin-left: 0.3rem;
   display: block;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -102,7 +103,7 @@
 }
 
 .탄소 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 5vw;
@@ -112,7 +113,7 @@
 }
 
 .가있습니다 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -125,7 +126,7 @@
 }
 
 .소개 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 3vw;
@@ -174,7 +175,7 @@
 .환경뉴스보기 {
   white-space: nowrap;
   margin-left: 1vw;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 1.5vw;
@@ -187,7 +188,7 @@
   height: 2vw;
 
   margin-top: 3vw;
-  margin-left: 1.3vw;
+  margin-left: 1vw;
   background: #52a028;
   border-radius: 20vw;
 
@@ -201,7 +202,7 @@
   height: 2vw;
 
   margin-top: 3vw;
-  margin-left: 2.2vw;
+  margin-left: 2vw;
 
   background: #0abcf0;
   border-radius: 20vw;
@@ -218,7 +219,7 @@
 .홈으로 {
   white-space: nowrap;
   margin-left: 1vw;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 1.5vw;
@@ -255,7 +256,7 @@
 
 .인포탄소컬러 {
   font-size: 2vw;
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 100;
   text-align: center;
@@ -270,7 +271,7 @@
 }
 
 .신호등소개글 {
-  font-family: "Inter";
+  font-family: "Nanum Gothic", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.1vw;
