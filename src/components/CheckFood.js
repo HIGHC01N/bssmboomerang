@@ -67,7 +67,6 @@ export function CheckFood() {
             </div>
 
             <D carbon={data.carbon} className="carbong">
-              {" "}
               {data.carbon}g<br />
             </D>
             <span className="calorie">
