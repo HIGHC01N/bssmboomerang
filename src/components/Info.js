@@ -40,13 +40,12 @@ export function Info() {
             </span>
             <span className="환경을오염시키는">환경을 오염시키는</span>
             <span className="탄소">탄소</span>
-            <span className="가있습니다">가 있습니다.</span>
+            <span className="가있습니다">가&nbsp; 있습니다.</span>
             <div className="탄소소개밑">
               <Link to ="/News" style={{ textDecoration: "none" }}>
               <div className="탄소소개밑왼쪽">
                 <span className="환경뉴스보기">
                   환경뉴스
-                  <br /> 보기
                 </span>
                 <div className="환경뉴스보기화살표">
                   <img className="인포화살표" src="/img/InfoBack.png"></img>
