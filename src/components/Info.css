@@ -10,6 +10,7 @@
   background: rgba(0, 0, 0, 0.7);
 }
 
+
 .InfoNav {
   display: flex;
   justify-content: space-evenly;
@@ -415,7 +416,7 @@
 
 @media (max-width: 1000px) {
   .홈으로화살표 {
-    margin-left: 13.5vw;
+    margin-left: 12.5vw;
     width: 5vw;
     height: 5vw;
   }
@@ -423,7 +424,7 @@
 
 @media (max-width: 1000px) {
   .환경뉴스보기화살표 {
-    margin-left: 11.5vw;
+    margin-left: 11vw;
     width: 5vw;
     height: 5vw;
   }
