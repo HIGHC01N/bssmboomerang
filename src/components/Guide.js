@@ -20,7 +20,7 @@ export function Guide() {
         url="https://www.youtube.com/watch?v=qSnsHO5v2GY&ab_channel=%EC%9D%B4%EB%AF%BC%EC%84%9D"
         width="100%"
         height="100vh"
-        muted={false} //chrome정책으로 인해 자동 재생을 위해 mute 옵션을 true로 해주었다.
+        muted={false}
         playing={true}
         loop={true}
       />

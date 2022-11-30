@@ -17,12 +17,12 @@ export function Service() {
                 <span className="이미모두의냉장고">이미 모두의 냉장고<br/>지금은 부메랑<br/></span>
                 <span className="한사람">한 사람, 한 사람을 위해 시작한 냉장고<br/>더 많은 사람들이 찾는 모두의 냉장고가 되었습니다.<br/></span>
                 <span className="사고">사고, 쓰고, 확인하고, 버리는<br/>당신의 모든 일이 바뀌고 있습니다.</span>
-                <Link to="/GooglePlay" style={{ textDecoration: "none" }}>
+                <a href = "https://play.google.com/store/apps/details?id=com.boomerang.apps" style={{ textDecoration: "none" }}>
                 <div className="playstore">
                     <img className="playstoreicon" src="https://cdn-icons-png.flaticon.com/128/300/300218.png"></img>
                     <span className="googleplay">Google play</span>
                 </div>
-                </Link>
+                </a>
             </div>
             <div className="첫번째블럭오른쪽">
                 <img className="부메랑gif" src="/img/boomerang.gif"></img>
